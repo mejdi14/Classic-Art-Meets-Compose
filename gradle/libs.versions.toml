@@ -2,8 +2,12 @@
 # Kotlin
 kotlin = "1.8.0"
 
+# Lifecycle
+lifecycle = "2.3.1"
+
 # Compose
 compose-core = "1.0.1"
+compose-activity = "1.3.1"
 
 # Room
 room-core = "2.3.0"
@@ -14,15 +18,21 @@ google-accompanist = "0.10.0"
 
 [libraries]
 # Kotlin
-room-compiler = { module = "androidx.core:core-ktx", version.ref = "kotlin"}
+kotlin-compiler = { module = "androidx.core:core-ktx", version.ref = "kotlin" }
+
+# Lifecycle
+lifecycle-runtime = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle" }
+
+# compose-activity
+compose-activity = { module = "androidx.activity:activity-compose", version.ref = "compose-activity" }
 
 # Room
-room-compiler = { module = "androidx.room:room-compiler", version.ref = "room-core"}
+room-compiler = { module = "androidx.room:room-compiler", version.ref = "room-core" }
 
 # Compose
-compose-compiler = { module = "androidx.compose.ui:ui", version.ref = "compose-core"}
-compose-material = { module = "androidx.compose.material:material", version.ref = "compose-core"}
-compose-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose-core"}
+compose-compiler = { module = "androidx.compose.ui:ui", version.ref = "compose-core" }
+compose-material = { module = "androidx.compose.material:material", version.ref = "compose-core" }
+compose-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose-core" }
 
 # Google
 google-material = { module = "com.google.android.material:material", version.ref = "google-material" }
