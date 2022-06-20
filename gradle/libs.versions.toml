@@ -1,6 +1,6 @@
 [versions]
 # Kotlin
-kotlin = "1.5.21"
+kotlin = "1.8.0"
 
 # Compose
 compose-core = "1.0.1"
@@ -13,8 +13,12 @@ google-material = "1.4.0"
 google-accompanist = "0.10.0"
 
 [libraries]
+# Kotlin
+room-compiler = { module = "androidx.core:core-ktx", version.ref = "kotlin"}
+
 # Room
 room-compiler = { module = "androidx.room:room-compiler", version.ref = "room-core"}
+
 # Compose
 compose-compiler = { module = "androidx.compose.ui:ui", version.ref = "compose-core"}
 compose-material = { module = "androidx.compose.material:material", version.ref = "compose-core"}
