@@ -11,7 +11,7 @@ jobs:
         uses: robvanderleek/create-issue-branch@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: give apk
+      - name: create new branch
         uses: actions/github-script@v4
         with:
           script: |
