@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 rootProject.name = "Studio-Ghibli-Meets-Compose"
 enableFeaturePreview("VERSION_CATALOGS")
 include ':app'
+include ':benchmark'
