@@ -29,8 +29,8 @@ class MainActivity : ComponentActivity() {
                         horizontalAlignment = Alignment.CenterHorizontally,
                         modifier = Modifier.background(color = Color.Green),
                     ) {
-                        TextField(value = "", onValueChange = {}, placeholder = { Text("Enter Email") })
-                        TextField(value = "", onValueChange = {}, placeholder = { Text("Enter Email") })
+                        TextField(value = "", onValueChange = {}, placeholder = { Text("Enter company id") })
+                        TextField(value = "", onValueChange = {}, placeholder = { Text("Enter phone number") })
                     }
                 }
             }
