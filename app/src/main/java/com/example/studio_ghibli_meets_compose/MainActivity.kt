@@ -27,6 +27,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             StudioGhibliMeetsComposeTheme {
+                SimpleCoilImage(this)
             }
         }
     }
@@ -35,6 +36,21 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun Greeting(name: String) {
     Text(text = "Hello $name!")
+}
+
+@Composable
+fun SimpleCoilImage(context: Context){
+    Image(
+        painter = rememberAsyncImagePainter(
+            ImageRequest.Builder(context)
+                .data(data = R.drawable.spirited_away_caracter)
+                .apply(block = {
+                    size(Size.ORIGINAL)
+                }).build()
+        ),
+        contentDescription = null,
+        modifier = Modifier.fillMaxSize()
+    )
 }
 
 @Composable
