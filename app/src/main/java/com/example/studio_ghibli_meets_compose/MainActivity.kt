@@ -1,15 +1,12 @@
 package com.example.studio_ghibli_meets_compose
 
-import android.R
-import android.R.attr.data
 import android.os.Build.VERSION.SDK_INT
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.size
-import androidx.compose.material.*
+import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -17,7 +14,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import coil.ImageLoader
 import coil.compose.rememberAsyncImagePainter
-import coil.compose.rememberImagePainter
 import coil.decode.GifDecoder
 import coil.decode.ImageDecoderDecoder
 import coil.request.ImageRequest
@@ -29,7 +25,6 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            val text = remember { mutableStateOf("text") }
             StudioGhibliMeetsComposeTheme {
                 // A surface container using the 'background' color from the theme
                 val imgLoader = ImageLoader.Builder(this)
@@ -41,9 +36,7 @@ class MainActivity : ComponentActivity() {
                         }
                     }
                     .build()
-
 // Use in Image
-
                 Image(
                     painter = rememberAsyncImagePainter(
                         ImageRequest.Builder(this)
