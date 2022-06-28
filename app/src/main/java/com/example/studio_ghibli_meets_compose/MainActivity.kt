@@ -61,7 +61,6 @@ fun GifImage(context: Context){
         contentDescription = null,
         modifier = Modifier.fillMaxSize()
     )
-
 }
 
 @Composable
