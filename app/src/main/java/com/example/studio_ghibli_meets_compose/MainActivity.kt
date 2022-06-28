@@ -1,5 +1,6 @@
 package com.example.studio_ghibli_meets_compose
 
+import android.content.Context
 import android.os.Build.VERSION.SDK_INT
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -26,28 +27,6 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             StudioGhibliMeetsComposeTheme {
-                // A surface container using the 'background' color from the theme
-                val imgLoader = ImageLoader.Builder(this)
-                    .components {
-                        if (SDK_INT >= 28) {
-                            add(ImageDecoderDecoder.Factory())
-                        } else {
-                            add(GifDecoder.Factory())
-                        }
-                    }
-                    .build()
-// Use in Image
-                Image(
-                    painter = rememberAsyncImagePainter(
-                        ImageRequest.Builder(this)
-                            .data(data = com.example.studio_ghibli_meets_compose.R.drawable.running_goat)
-                            .apply(block = {
-                                size(Size.ORIGINAL)
-                            }).build(), imageLoader = imgLoader
-                    ),
-                    contentDescription = null,
-                    modifier = Modifier.fillMaxSize()
-                )
             }
         }
     }
@@ -56,6 +35,33 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun Greeting(name: String) {
     Text(text = "Hello $name!")
+}
+
+@Composable
+fun GifImage(context: Context){
+    // A surface container using the 'background' color from the theme
+    val imgLoader = ImageLoader.Builder(context)
+        .components {
+            if (SDK_INT >= 28) {
+                add(ImageDecoderDecoder.Factory())
+            } else {
+                add(GifDecoder.Factory())
+            }
+        }
+        .build()
+// Use in Image
+    Image(
+        painter = rememberAsyncImagePainter(
+            ImageRequest.Builder(context)
+                .data(data = R.drawable.running_goat)
+                .apply(block = {
+                    size(Size.ORIGINAL)
+                }).build(), imageLoader = imgLoader
+        ),
+        contentDescription = null,
+        modifier = Modifier.fillMaxSize()
+    )
+
 }
 
 @Composable
