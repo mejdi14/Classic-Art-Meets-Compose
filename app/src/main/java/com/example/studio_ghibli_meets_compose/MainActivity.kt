@@ -6,12 +6,16 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import coil.ImageLoader
 import coil.compose.rememberAsyncImagePainter
@@ -27,7 +31,13 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             StudioGhibliMeetsComposeTheme {
-                SimpleCoilImage(this)
+
+                Column(modifier = Modifier.background(Color.White)) {
+                    Box(modifier = Modifier.weight(1f))
+                    Box(modifier = Modifier.weight(1f)) {
+                        GifImage(context = this@MainActivity)
+                    }
+                }
             }
         }
     }
@@ -39,13 +49,13 @@ fun Greeting(name: String) {
 }
 
 @Composable
-fun SimpleCoilImage(context: Context){
+fun SimpleCoilImage(context: Context) {
     Image(
         painter = rememberAsyncImagePainter(
             ImageRequest.Builder(context)
-                .data(data = R.drawable.spirited_away_caracter)
+                .data(data = "https://cdn.dribbble.com/users/5462404/screenshots/14049276/media/ceb899e0922f7ca5edaf0d01802f9379.jpeg")
                 .apply(block = {
-                    size(Size.ORIGINAL)
+                    size(size = Size.ORIGINAL)
                 }).build()
         ),
         contentDescription = null,
@@ -54,7 +64,7 @@ fun SimpleCoilImage(context: Context){
 }
 
 @Composable
-fun GifImage(context: Context){
+fun GifImage(context: Context) {
     // A surface container using the 'background' color from the theme
     val imgLoader = ImageLoader.Builder(context)
         .components {
