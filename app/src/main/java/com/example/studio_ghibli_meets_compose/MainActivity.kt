@@ -32,13 +32,20 @@ class MainActivity : ComponentActivity() {
         setContent {
             StudioGhibliMeetsComposeTheme {
 
-                Column(modifier = Modifier.background(Color.White)) {
-                    Box(modifier = Modifier.weight(1f))
-                    Box(modifier = Modifier.weight(1f)) {
-                        GifImage(context = this@MainActivity)
-                    }
-                }
+
             }
+        }
+    }
+}
+
+@Composable
+fun EnterScreen(context: Context){
+    Column(modifier = Modifier.background(Color.White)) {
+        Box(modifier = Modifier.weight(1f)){
+
+        }
+        Box(modifier = Modifier.weight(1f)) {
+            GifImage(context = context)
         }
     }
 }
