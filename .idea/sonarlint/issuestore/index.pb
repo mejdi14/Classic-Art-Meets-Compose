@@ -11,3 +11,5 @@ x
 Hbenchmark/src/main/java/com/example/benchmark/ExampleStartupBenchmark.kt,c\5\c5390b20cda05512e023cf151bf4af3bdfed13b7
 F
 benchmark/build.gradle,8\f\8f7e28a1d7e0962aabd9dbab5a371ce898a7abb4
+P
+ app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
