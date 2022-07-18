@@ -15,6 +15,12 @@ plugins {
     id "com.diffplug.gradle.spotless" version "6.8.0" apply false
 }
 
+subprojects {
+    afterEvaluate { project ->
+        project.apply from: '../spotless.gradle'
+    }
+}
+
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
