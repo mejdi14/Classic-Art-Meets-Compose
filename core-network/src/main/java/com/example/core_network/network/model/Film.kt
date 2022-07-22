@@ -1,7 +1,6 @@
 package com.example.core_network.network.model
 
 import kotlinx.serialization.Serializable
-
 @Serializable
 data class Film (
     var id                     : String?           = null,

@@ -2,6 +2,7 @@ plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
+    id("kotlinx-serialization")
 }
 
 android {
@@ -41,5 +42,5 @@ dependencies {
     androidTestImplementation libs.expresso.compiler
     implementation libs.hilt.android
     kapt libs.hilt.compiler
-    kapt libs.kotlinx.serialization
+    implementation libs.kotlinx.serialization
 }
