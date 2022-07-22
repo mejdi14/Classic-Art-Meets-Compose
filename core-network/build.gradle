@@ -33,7 +33,7 @@ android {
 dependencies {
 
     implementation libs.kotlin.compiler
-    implementation 'androidx.appcompat:appcompat:1.4.2'
+    implementation libs.appcompat
     implementation libs.google.material
     implementation libs.kotlin.compiler
     testImplementation libs.junit.compiler
