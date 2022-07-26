@@ -37,7 +37,6 @@ android {
 }
 
 dependencies {
-
     implementation libs.kotlin.compiler
     implementation libs.appcompat
     implementation libs.google.material
@@ -48,4 +47,6 @@ dependencies {
     implementation libs.hilt.android
     kapt libs.hilt.compiler
     implementation libs.kotlinx.serialization
+    implementation libs.retrofit.core
+    implementation libs.retrofit.kotlin.serialization
 }
