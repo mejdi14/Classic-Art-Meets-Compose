@@ -21,6 +21,7 @@ hiltExt = "1.0.0"
 #Retrofit
 retrofit = "2.9.0"
 retrofitKotlinxSerializationJson = "0.8.0"
+okhttp = "4.9.3"
 
 # Test
 junit = "4.13.2"
@@ -54,6 +55,7 @@ lifecycle-runtime = { module = "androidx.lifecycle:lifecycle-runtime-ktx", versi
 #Retrofit
 retrofit-core = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
 retrofit-kotlin-serialization = { group = "com.jakewharton.retrofit", name = "retrofit2-kotlinx-serialization-converter", version.ref = "retrofitKotlinxSerializationJson" }
+okhttp-logging = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp" }
 
 # Junit
 junit-compiler = { module = "junit:junit", version.ref = "junit" }
