@@ -28,7 +28,6 @@ class RetrofitGhibliNetwork @Inject constructor(
         .client(
             OkHttpClient.Builder()
                 .addInterceptor(
-                    // TODO: Decide logging logic
                     HttpLoggingInterceptor().apply {
                         setLevel(HttpLoggingInterceptor.Level.BODY)
                     }
