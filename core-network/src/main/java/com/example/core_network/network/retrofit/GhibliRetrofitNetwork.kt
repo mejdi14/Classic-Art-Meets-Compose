@@ -36,5 +36,5 @@ class RetrofitGhibliNetwork @Inject constructor(
         )
         .addConverterFactory(networkJson.asConverterFactory("application/json".toMediaType()))
         .build()
-        .create(RetrofitGhibliNetwork::class.java)
+        .create(GhibliRetrofitApi::class.java)
 }
