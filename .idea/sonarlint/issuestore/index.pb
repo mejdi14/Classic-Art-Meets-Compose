@@ -19,3 +19,5 @@ P
 spotless.gradle,b\1\b12ec6d02d4de2c80cf1e9ce68083d3d124b0292
 O
 core-network/consumer-rules.pro,c\0\c0861572cd072794791a0d1e1a632d1369f1afbc
+I
+core-network/build.gradle,9\f\9f6e8fdc80fcbc824c852cf7ffec33203d26d9fb
