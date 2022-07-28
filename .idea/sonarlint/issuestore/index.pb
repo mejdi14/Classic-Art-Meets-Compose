@@ -13,3 +13,9 @@ F
 benchmark/build.gradle,8\f\8f7e28a1d7e0962aabd9dbab5a371ce898a7abb4
 P
  app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
+<
+build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
+?
+spotless.gradle,b\1\b12ec6d02d4de2c80cf1e9ce68083d3d124b0292
+O
+core-network/consumer-rules.pro,c\0\c0861572cd072794791a0d1e1a632d1369f1afbc

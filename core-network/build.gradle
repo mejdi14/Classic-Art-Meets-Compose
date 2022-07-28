@@ -2,7 +2,8 @@ plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
-    id("kotlinx-serialization")
+    id 'kotlinx-serialization'
+    id 'dagger.hilt.android.plugin'
 }
 
 android {
@@ -17,7 +18,11 @@ android {
     }
 
     buildTypes {
+        debug{
+            buildConfigField "String", 'BASE_URL', "\"https://ghibliapi.herokuapp.com\""
+        }
         release {
+            buildConfigField "String", 'BASE_URL', "\"https://ghibliapi.herokuapp.com\""
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
@@ -32,7 +37,6 @@ android {
 }
 
 dependencies {
-
     implementation libs.kotlin.compiler
     implementation libs.appcompat
     implementation libs.google.material
@@ -43,4 +47,7 @@ dependencies {
     implementation libs.hilt.android
     kapt libs.hilt.compiler
     implementation libs.kotlinx.serialization
+    implementation libs.retrofit.core
+    implementation libs.retrofit.kotlin.serialization
+    implementation libs.okhttp.logging
 }
