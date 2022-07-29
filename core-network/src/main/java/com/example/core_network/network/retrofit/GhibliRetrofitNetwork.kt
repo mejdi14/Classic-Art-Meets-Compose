@@ -20,7 +20,9 @@ class RetrofitGhibliNetwork @Inject constructor(
     networkJson: Json
 ) : GhibliNetwork {
     override suspend fun getTopics(): List<Film> {
-        return networkApi.getFilms().data
+        val dataInfo = networkApi.getFilms().data
+        print(networkApi.getFilms())
+        return dataInfo
     }
 
     private val networkApi = Retrofit.Builder()
