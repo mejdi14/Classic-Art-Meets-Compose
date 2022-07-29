@@ -19,8 +19,8 @@ import javax.inject.Singleton
 class RetrofitGhibliNetwork @Inject constructor(
     networkJson: Json
 ) : GhibliNetwork {
-    override suspend fun getTopics(ids: List<String>?): List<Film> {
-        return networkApi.getFilms(ids = ids).data
+    override suspend fun getTopics(): List<Film> {
+        return networkApi.getFilms().data
     }
 
     private val networkApi = Retrofit.Builder()

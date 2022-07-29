@@ -3,8 +3,10 @@ package com.example.studio_ghibli_meets_compose
 import android.content.Context
 import android.os.Build.VERSION.SDK_INT
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.activity.viewModels
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -24,14 +26,24 @@ import coil.decode.ImageDecoderDecoder
 import coil.request.ImageRequest
 import coil.size.Size
 import com.example.core_network.network.GhibliNetwork
+import com.example.studio_ghibli_meets_compose.repositories.FilmRepository
+import com.example.studio_ghibli_meets_compose.repositories.FilmViewModel
 import com.example.studio_ghibli_meets_compose.ui.theme.StudioGhibliMeetsComposeTheme
+import dagger.hilt.EntryPoint
+import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 
-
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
+    val  viewmodel: FilmViewModel by viewModels()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val network : GhibliNetwork
-        network.getTopics()
+        GlobalScope.launch (Dispatchers.Main) {
+        val list = viewmodel.getAllFilms()
+            Log.d("TAG", "onCreate: $list")
+        }
         setContent {
             StudioGhibliMeetsComposeTheme {
 
