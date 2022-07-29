@@ -34,18 +34,22 @@ import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     val  viewmodel: FilmViewModel by viewModels()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        GlobalScope.launch (Dispatchers.Main) {
-        val list = viewmodel.getAllFilms()
-            Log.d("TAG", "onCreate: $list")
+        runBlocking{
+            launch {
+                val list = viewmodel.getAllFilms()
+                Log.d("TAG", "onCreate: $list")
+            }
         }
         setContent {
             StudioGhibliMeetsComposeTheme {
+
 
 
             }
