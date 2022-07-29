@@ -23,12 +23,15 @@ import coil.decode.GifDecoder
 import coil.decode.ImageDecoderDecoder
 import coil.request.ImageRequest
 import coil.size.Size
+import com.example.core_network.network.GhibliNetwork
 import com.example.studio_ghibli_meets_compose.ui.theme.StudioGhibliMeetsComposeTheme
 
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        val network : GhibliNetwork
+        network.getTopics()
         setContent {
             StudioGhibliMeetsComposeTheme {
 

@@ -21,3 +21,11 @@ O
 core-network/consumer-rules.pro,c\0\c0861572cd072794791a0d1e1a632d1369f1afbc
 I
 core-network/build.gradle,9\f\9f6e8fdc80fcbc824c852cf7ffec33203d26d9fb
+ç
+]core-network/src/main/java/com/example/core_network/network/retrofit/GhibliRetrofitNetwork.kt,3\d\3d906ac80efbf4a7cd57c41bc8408e4589711596
+Ü
+Vcore-network/src/main/java/com/example/core_network/network/retrofit/NetworkResonse.kt,e\6\e60241423d261c079c4d2256b5692718399cc117
+â
+Ycore-network/src/main/java/com/example/core_network/network/retrofit/GhibliRetrofitApi.kt,7\f\7fb604b52f0a74a7b03aed707e33a8364a386f58
+y
+Icore-network/src/main/java/com/example/core_network/network/model/Film.kt,5\f\5f09933c975023f70db09ec48047eb46e77f1c9d
