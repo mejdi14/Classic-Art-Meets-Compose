@@ -44,7 +44,6 @@ class MainActivity : ComponentActivity() {
         runBlocking{
             launch {
                 val list = viewmodel.getAllFilms()
-                Log.d("TAG", "onCreate: $list")
             }
         }
         setContent {
