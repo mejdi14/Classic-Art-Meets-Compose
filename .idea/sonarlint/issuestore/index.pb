@@ -23,11 +23,11 @@ X
 (gradle/wrapper/gradle-wrapper.properties,f\b\fbe448ebfc3eb2d4e308f6b8b043666f5b57235e
 I
 gradle/libs.versions.toml,d\7\d7595319a0658be6f1ed500ad590d42e4b28bc4f
-I
-core-network/build.gradle,9\f\9f6e8fdc80fcbc824c852cf7ffec33203d26d9fb
-@
-app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
 Y
 )core-network/src/main/AndroidManifest.xml,d\e\decfb190da136adc616a6cb2246645b744468a7b
 P
  app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
+ç
+]core-network/src/main/java/com/example/core_network/network/retrofit/GhibliRetrofitNetwork.kt,3\d\3d906ac80efbf4a7cd57c41bc8408e4589711596
+â
+Ycore-network/src/main/java/com/example/core_network/network/retrofit/GhibliRetrofitApi.kt,7\f\7fb604b52f0a74a7b03aed707e33a8364a386f58
