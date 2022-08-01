@@ -22,7 +22,6 @@ import coil.decode.GifDecoder
 import coil.decode.ImageDecoderDecoder
 import coil.request.ImageRequest
 import coil.size.Size
-import com.example.studio_ghibli_meets_compose.R
 import com.example.studioghiblimeetscompose.repositories.FilmViewModel
 import com.example.studioghiblimeetscompose.ui.theme.StudioGhibliMeetsComposeTheme
 import dagger.hilt.android.AndroidEntryPoint
