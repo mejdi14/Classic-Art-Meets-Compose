@@ -1,4 +1,4 @@
-package com.example.studio_ghibli_meets_compose.repositories
+package com.example.studioghiblimeetscompose.repositories
 
 import com.example.core_network.network.GhibliNetwork
 import com.example.core_network.network.model.Film

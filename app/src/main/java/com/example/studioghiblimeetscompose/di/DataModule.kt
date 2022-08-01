@@ -1,4 +1,4 @@
-package com.example.studio_ghibli_meets_compose.di
+package com.example.studioghiblimeetscompose.di
 
 import com.example.core_network.network.GhibliNetwork
 import com.example.core_network.network.retrofit.RetrofitGhibliNetwork

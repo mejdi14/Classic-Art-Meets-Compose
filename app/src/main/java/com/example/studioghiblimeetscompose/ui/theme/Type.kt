@@ -1,4 +1,4 @@
-package com.example.studio_ghibli_meets_compose.ui.theme
+package com.example.studioghiblimeetscompose.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle

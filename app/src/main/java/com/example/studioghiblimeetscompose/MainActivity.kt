@@ -1,9 +1,8 @@
-package com.example.studio_ghibli_meets_compose
+package com.example.studioghiblimeetscompose
 
 import android.content.Context
 import android.os.Build.VERSION.SDK_INT
 import android.os.Bundle
-import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.viewModels
@@ -14,8 +13,6 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
@@ -25,23 +22,19 @@ import coil.decode.GifDecoder
 import coil.decode.ImageDecoderDecoder
 import coil.request.ImageRequest
 import coil.size.Size
-import com.example.core_network.network.GhibliNetwork
-import com.example.studio_ghibli_meets_compose.repositories.FilmRepository
-import com.example.studio_ghibli_meets_compose.repositories.FilmViewModel
-import com.example.studio_ghibli_meets_compose.ui.theme.StudioGhibliMeetsComposeTheme
-import dagger.hilt.EntryPoint
+import com.example.studio_ghibli_meets_compose.R
+import com.example.studioghiblimeetscompose.repositories.FilmViewModel
+import com.example.studioghiblimeetscompose.ui.theme.StudioGhibliMeetsComposeTheme
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
-    val  viewmodel: FilmViewModel by viewModels()
+    val viewmodel: FilmViewModel by viewModels()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        runBlocking{
+        runBlocking {
             launch {
                 val list = viewmodel.getAllFilms()
             }
@@ -50,16 +43,15 @@ class MainActivity : ComponentActivity() {
             StudioGhibliMeetsComposeTheme {
 
 
-
             }
         }
     }
 }
 
 @Composable
-fun EnterScreen(context: Context){
+fun EnterScreen(context: Context) {
     Column(modifier = Modifier.background(Color.White)) {
-        Box(modifier = Modifier.weight(1f)){
+        Box(modifier = Modifier.weight(1f)) {
 
         }
         Box(modifier = Modifier.weight(1f)) {
