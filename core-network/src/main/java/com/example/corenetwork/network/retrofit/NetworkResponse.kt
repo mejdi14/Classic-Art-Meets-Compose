@@ -1,4 +1,4 @@
-package com.example.core_network.network.retrofit
+package com.example.corenetwork.network.retrofit
 
 import kotlinx.serialization.Serializable
 

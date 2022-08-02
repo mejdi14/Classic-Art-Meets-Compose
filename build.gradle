@@ -3,9 +3,10 @@ buildscript {
         compose_version = '1.1.1'
     }
     dependencies {
-        classpath "org.jetbrains.kotlin:kotlin-serialization:1.6.10"
+        classpath "org.jetbrains.kotlin:kotlin-serialization:1.6.21"
     }
 }// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
 plugins {
     id 'com.android.application' version '7.2.1' apply false
     id 'com.android.library' version '7.2.1' apply false
@@ -24,4 +25,9 @@ subprojects {
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+
+task copySpotlessPreCommit(type: Copy) {
+    from './hooks/pre-commit'
+    into './.git/hooks'
 }
