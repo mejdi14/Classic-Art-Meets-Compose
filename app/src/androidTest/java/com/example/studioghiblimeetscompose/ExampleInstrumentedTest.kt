@@ -1,4 +1,4 @@
-package com.example.studio_ghibli_meets_compose
+package com.example.studioghiblimeetscompose
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

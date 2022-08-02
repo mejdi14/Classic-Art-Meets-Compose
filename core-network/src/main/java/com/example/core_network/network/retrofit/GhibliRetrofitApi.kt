@@ -5,8 +5,7 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 
 interface GhibliRetrofitApi {
-    @GET(value = "topics")
+    @GET(value = "films")
     suspend fun getFilms(
-        @Query("id") ids: List<String>?,
     ): NetworkResponse<List<Film>>
 }
