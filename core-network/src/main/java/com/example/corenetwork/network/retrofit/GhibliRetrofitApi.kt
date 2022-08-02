@@ -5,6 +5,5 @@ import retrofit2.http.GET
 
 interface GhibliRetrofitApi {
     @GET(value = "films")
-    suspend fun getFilms(
-    ): NetworkResponse<List<Film>>
+    suspend fun getFilms(): NetworkResponse<List<Film>>
 }
