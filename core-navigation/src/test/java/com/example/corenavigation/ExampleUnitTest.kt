@@ -1,4 +1,4 @@
-package com.example.core_network
+package com.example.corenavigation
 
 import org.junit.Test
 
