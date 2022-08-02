@@ -28,6 +28,6 @@ task clean(type: Delete) {
 }
 
 task copySpotlessPreCommit(type: Copy) {
-    from './hooks/pre-commit'
+    from './hooks/pre-push'
     into './.git/hooks'
 }
