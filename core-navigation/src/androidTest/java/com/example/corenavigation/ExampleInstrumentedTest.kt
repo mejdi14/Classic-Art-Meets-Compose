@@ -1,4 +1,4 @@
-package com.example.core_navigation
+package com.example.corenavigation
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

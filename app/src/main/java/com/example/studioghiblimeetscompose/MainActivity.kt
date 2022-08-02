@@ -40,8 +40,6 @@ class MainActivity : ComponentActivity() {
         }
         setContent {
             StudioGhibliMeetsComposeTheme {
-
-
             }
         }
     }
@@ -51,7 +49,6 @@ class MainActivity : ComponentActivity() {
 fun EnterScreen(context: Context) {
     Column(modifier = Modifier.background(Color.White)) {
         Box(modifier = Modifier.weight(1f)) {
-
         }
         Box(modifier = Modifier.weight(1f)) {
             GifImage(context = context)
@@ -98,7 +95,8 @@ fun GifImage(context: Context) {
                 .data(data = R.drawable.running_goat)
                 .apply(block = {
                     size(Size.ORIGINAL)
-                }).build(), imageLoader = imgLoader
+                }).build(),
+            imageLoader = imgLoader
         ),
         contentDescription = null,
         modifier = Modifier.fillMaxSize()
@@ -107,8 +105,6 @@ fun GifImage(context: Context) {
 
 @Composable
 fun SplashScreenTransaction() {
-
-
 }
 
 @Preview(showBackground = true)

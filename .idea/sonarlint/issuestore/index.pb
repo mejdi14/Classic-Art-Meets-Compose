@@ -13,12 +13,8 @@ F
 benchmark/build.gradle,8\f\8f7e28a1d7e0962aabd9dbab5a371ce898a7abb4
 O
 core-network/consumer-rules.pro,c\0\c0861572cd072794791a0d1e1a632d1369f1afbc
-y
-Icore-network/src/main/java/com/example/core_network/network/model/Film.kt,5\f\5f09933c975023f70db09ec48047eb46e77f1c9d
 ?
 settings.gradle,0\5\05efc8b1657769a27696d478ded1e95f38737233
-v
-Fapp/src/main/java/com/example/studio_ghibli_meets_compose/GhibliApp.kt,3\8\38e6cb57f31e205b0924a9690814e338bd9f05bb
 X
 (gradle/wrapper/gradle-wrapper.properties,f\b\fbe448ebfc3eb2d4e308f6b8b043666f5b57235e
 I
@@ -31,3 +27,5 @@ P
 ]core-network/src/main/java/com/example/core_network/network/retrofit/GhibliRetrofitNetwork.kt,3\d\3d906ac80efbf4a7cd57c41bc8408e4589711596
 ‰
 Ycore-network/src/main/java/com/example/core_network/network/retrofit/GhibliRetrofitApi.kt,7\f\7fb604b52f0a74a7b03aed707e33a8364a386f58
+†
+Vcore-network/src/main/java/com/example/core_network/network/retrofit/NetworkResonse.kt,e\6\e60241423d261c079c4d2256b5692718399cc117

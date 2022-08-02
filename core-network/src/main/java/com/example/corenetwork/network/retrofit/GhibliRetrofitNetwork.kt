@@ -1,8 +1,8 @@
-package com.example.core_network.network.retrofit
+package com.example.corenetwork.network.retrofit
 
-import com.example.core_network.BuildConfig
-import com.example.core_network.network.GhibliNetwork
-import com.example.core_network.network.model.Film
+import com.example.corenetwork.BuildConfig
+import com.example.corenetwork.network.GhibliNetwork
+import com.example.corenetwork.network.model.Film
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import kotlinx.serialization.json.Json
 import okhttp3.MediaType.Companion.toMediaType
@@ -12,11 +12,8 @@ import retrofit2.Retrofit
 import javax.inject.Inject
 import javax.inject.Singleton
 
-/**
- * [Retrofit] backed [NiaNetwork]
- */
 @Singleton
-class RetrofitGhibliNetwork @Inject constructor(
+class GhibliRetrofitNetwork @Inject constructor(
     networkJson: Json
 ) : GhibliNetwork {
     override suspend fun getTopics(): List<Film> {

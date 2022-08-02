@@ -1,12 +1,8 @@
-#!/bin/sh
-# Part 1
-stagedFiles=$(git diff --staged --name-only)
-# Part 2
-echo "Running spotlessApply. Formatting code..."
-./gradlew spotlessApply
-# Part 3
-for file in $stagedFiles; do
-  if test -f "$file"; then
-    git add $file
-  fi
-done
+#!/usr/bin/env bash
+printf "\e[33;1m%s\e[0m\n" 'Running the check formatter'
+./gradlew spotlessCheck
+if [ $? -ne 0 ]; then
+  printf "\e[31;1m%s\e[0m\n" 'Running the check format error'
+exit 1
+printf "\e[33;1m%s\e[0m\n" 'Finished running the check formatter'
+fi
