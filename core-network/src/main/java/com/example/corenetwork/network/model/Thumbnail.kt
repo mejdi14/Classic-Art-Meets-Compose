@@ -1,13 +1,13 @@
-package com.example.example
+package com.example.corenetwork.network.model
 
-import com.google.gson.annotations.SerializedName
+import kotlinx.serialization.Serializable
 
+@Serializable
+data class Thumbnail(
 
-data class Thumbnail (
-
-  @SerializedName("lqip"     ) var lqip    : String? = null,
-  @SerializedName("width"    ) var width   : Int?    = null,
-  @SerializedName("height"   ) var height  : Int?    = null,
-  @SerializedName("alt_text" ) var altText : String? = null
+    var lqip: String? = null,
+    var width: Int? = null,
+    var height: Int? = null,
+    var altText: String? = null
 
 )

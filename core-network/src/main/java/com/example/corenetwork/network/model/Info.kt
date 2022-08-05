@@ -1,12 +1,12 @@
-package com.example.example
+package com.example.corenetwork.network.model
 
-import com.google.gson.annotations.SerializedName
+import kotlinx.serialization.Serializable
 
+@Serializable
+data class Info(
 
-data class Info (
-
-  @SerializedName("license_text"  ) var licenseText  : String?           = null,
-  @SerializedName("license_links" ) var licenseLinks : ArrayList<String> = arrayListOf(),
-  @SerializedName("version"       ) var version      : String?           = null
+    var licenseText: String? = null,
+    var licenseLinks: ArrayList<String> = arrayListOf(),
+    var version: String? = null
 
 )

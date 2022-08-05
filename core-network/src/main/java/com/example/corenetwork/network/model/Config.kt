@@ -1,11 +1,11 @@
-package com.example.example
+package com.example.corenetwork.network.model
 
-import com.google.gson.annotations.SerializedName
+import kotlinx.serialization.Serializable
 
+@Serializable
+data class Config(
 
-data class Config (
-
-  @SerializedName("iiif_url"    ) var iiifUrl    : String? = null,
-  @SerializedName("website_url" ) var websiteUrl : String? = null
+    var iiifUrl: String? = null,
+    var websiteUrl: String? = null
 
 )

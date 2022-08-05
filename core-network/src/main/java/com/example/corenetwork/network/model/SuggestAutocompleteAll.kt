@@ -1,11 +1,11 @@
-package com.example.example
+package com.example.corenetwork.network.model
 
-import com.google.gson.annotations.SerializedName
+import kotlinx.serialization.Serializable
 
+@Serializable
+data class SuggestAutocompleteAll(
 
-data class SuggestAutocompleteAll (
-
-  @SerializedName("input"    ) var input    : ArrayList<String> = arrayListOf(),
-  @SerializedName("contexts" ) var contexts : Contexts?         = Contexts()
+    var input: ArrayList<String> = arrayListOf(),
+    var contexts: Contexts? = Contexts()
 
 )

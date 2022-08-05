@@ -1,10 +1,10 @@
-package com.example.example
+package com.example.corenetwork.network.model
 
-import com.google.gson.annotations.SerializedName
+import kotlinx.serialization.Serializable
 
+@Serializable
+data class Contexts(
 
-data class Contexts (
-
-  @SerializedName("groupings" ) var groupings : ArrayList<String> = arrayListOf()
+    var groupings: ArrayList<String> = arrayListOf()
 
 )
