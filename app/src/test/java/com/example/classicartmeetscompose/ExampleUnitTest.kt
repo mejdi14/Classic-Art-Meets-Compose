@@ -1,4 +1,4 @@
-package com.example.studioghiblimeetscompose
+package com.example.classicartmeetscompose
 
 import org.junit.Test
 

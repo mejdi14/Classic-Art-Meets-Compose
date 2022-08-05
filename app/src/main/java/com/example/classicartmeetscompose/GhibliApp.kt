@@ -1,4 +1,4 @@
-package com.example.studioghiblimeetscompose
+package com.example.classicartmeetscompose
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

@@ -1,4 +1,4 @@
-package com.example.studioghiblimeetscompose.ui.theme
+package com.example.classicartmeetscompose.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
