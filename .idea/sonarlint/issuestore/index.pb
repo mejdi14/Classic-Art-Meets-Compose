@@ -19,8 +19,6 @@ I
 gradle/libs.versions.toml,d\7\d7595319a0658be6f1ed500ad590d42e4b28bc4f
 Y
 )core-network/src/main/AndroidManifest.xml,d\e\decfb190da136adc616a6cb2246645b744468a7b
-P
- app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
 …
 Uapp/src/main/java/com/example/studioghiblimeetscompose/repositories/FilmRepository.kt,7\0\70ae9dafeb76a8b4385d31e316e322762f1dc054
 {

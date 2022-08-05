@@ -26,7 +26,6 @@ import coil.request.ImageRequest
 import coil.size.Size
 import com.example.classicartmeetscompose.repositories.FilmViewModel
 import com.example.classicartmeetscompose.ui.theme.StudioGhibliMeetsComposeTheme
-import com.example.studioghiblimeetscompose.R
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
