@@ -1,7 +1,6 @@
 package com.example.corenetwork.network.model
 
 import kotlinx.serialization.Serializable
-
 @Serializable
 data class Color(
     var h: Int? = null,
