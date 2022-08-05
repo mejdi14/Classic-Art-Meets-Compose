@@ -1,4 +1,4 @@
-package com.example.studioghiblimeetscompose.repositories
+package com.example.classicartmeetscompose.repositories
 
 import com.example.corenetwork.network.GhibliNetwork
 import com.example.corenetwork.network.model.Film

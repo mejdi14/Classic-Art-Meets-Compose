@@ -1,4 +1,4 @@
-package com.example.studioghiblimeetscompose
+package com.example.classicartmeetscompose
 
 import android.content.Context
 import android.os.Build.VERSION.SDK_INT
@@ -24,8 +24,9 @@ import coil.decode.GifDecoder
 import coil.decode.ImageDecoderDecoder
 import coil.request.ImageRequest
 import coil.size.Size
-import com.example.studioghiblimeetscompose.repositories.FilmViewModel
-import com.example.studioghiblimeetscompose.ui.theme.StudioGhibliMeetsComposeTheme
+import com.example.classicartmeetscompose.repositories.FilmViewModel
+import com.example.classicartmeetscompose.ui.theme.StudioGhibliMeetsComposeTheme
+import com.example.studioghiblimeetscompose.R
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

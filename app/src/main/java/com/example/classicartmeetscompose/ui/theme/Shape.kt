@@ -1,4 +1,4 @@
-package com.example.studioghiblimeetscompose.ui.theme
+package com.example.classicartmeetscompose.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes

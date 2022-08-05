@@ -1,4 +1,4 @@
-package com.example.studioghiblimeetscompose.repositories
+package com.example.classicartmeetscompose.repositories
 
 import android.util.Log
 import androidx.lifecycle.ViewModel
