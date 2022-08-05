@@ -12,9 +12,10 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Studio-Ghibli-Meets-Compose"
+rootProject.name = "Classic-Art-Meets-Compose"
 enableFeaturePreview("VERSION_CATALOGS")
 include ':app'
 include ':benchmark'
 include ':core-network'
 include ':core-navigation'
+include ':core-data'
