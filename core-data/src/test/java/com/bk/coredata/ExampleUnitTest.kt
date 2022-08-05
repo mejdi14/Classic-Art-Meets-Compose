@@ -1,4 +1,4 @@
-package com.bk.core_data
+package com.bk.coredata
 
 import org.junit.Test
 

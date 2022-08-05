@@ -1,4 +1,4 @@
-package com.bk.core_data
+package com.bk.coredata
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
