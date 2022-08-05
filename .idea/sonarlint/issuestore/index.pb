@@ -23,9 +23,9 @@ Y
 )core-network/src/main/AndroidManifest.xml,d\e\decfb190da136adc616a6cb2246645b744468a7b
 P
  app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
-ç
-]core-network/src/main/java/com/example/core_network/network/retrofit/GhibliRetrofitNetwork.kt,3\d\3d906ac80efbf4a7cd57c41bc8408e4589711596
-â
-Ycore-network/src/main/java/com/example/core_network/network/retrofit/GhibliRetrofitApi.kt,7\f\7fb604b52f0a74a7b03aed707e33a8364a386f58
-Ü
-Vcore-network/src/main/java/com/example/core_network/network/retrofit/NetworkResonse.kt,e\6\e60241423d261c079c4d2256b5692718399cc117
+Ö
+Uapp/src/main/java/com/example/studioghiblimeetscompose/repositories/FilmRepository.kt,7\0\70ae9dafeb76a8b4385d31e316e322762f1dc054
+{
+Kcore-network/src/main/java/com/example/corenetwork/network/GhibliNetwork.kt,e\2\e21f0812936b77cc6662dff11bba9800726ee86c
+x
+Hcore-network/src/main/java/com/example/corenetwork/network/model/Film.kt,a\7\a7eff9e9bec86eadc30c278616fcee24969c65f3
