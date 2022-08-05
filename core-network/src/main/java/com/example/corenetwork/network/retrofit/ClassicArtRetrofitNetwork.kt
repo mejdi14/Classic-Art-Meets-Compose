@@ -2,9 +2,7 @@ package com.example.corenetwork.network.retrofit
 
 import com.example.corenetwork.BuildConfig
 import com.example.corenetwork.network.ClassicArtNetwork
-import com.example.corenetwork.network.model.Artwork
 import com.example.corenetwork.network.model.Data
-import com.example.corenetwork.network.model.Film
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import kotlinx.serialization.json.Json
 import okhttp3.MediaType.Companion.toMediaType

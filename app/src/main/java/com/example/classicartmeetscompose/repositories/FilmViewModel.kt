@@ -2,9 +2,7 @@ package com.example.classicartmeetscompose.repositories
 
 import android.util.Log
 import androidx.lifecycle.ViewModel
-import com.example.corenetwork.network.model.Artwork
 import com.example.corenetwork.network.model.Data
-import com.example.corenetwork.network.model.Film
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 @HiltViewModel
