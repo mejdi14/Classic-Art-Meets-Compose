@@ -14,7 +14,7 @@ import kotlinx.serialization.json.Json
 @InstallIn(SingletonComponent::class)
 interface DataModule {
     @Binds
-    fun bindsNiaNetwork(niANetwork: ClassicArtRetrofitNetwork): ClassicArtNetwork
+    fun bindsClassicArtNetwork(niANetwork: ClassicArtRetrofitNetwork): ClassicArtNetwork
 
     companion object {
         @Provides

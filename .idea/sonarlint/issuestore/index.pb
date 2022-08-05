@@ -27,8 +27,6 @@ Y
 settings.gradle,0\5\05efc8b1657769a27696d478ded1e95f38737233
 P
  app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
-@
-app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
 z
 Jcore-network/src/main/java/com/example/corenetwork/network/model/Config.kt,a\f\afac8af8a9c70b7cc7e4a177fdadaca06080c115
 ?
@@ -47,5 +45,3 @@ I
 core-network/build.gradle,9\f\9f6e8fdc80fcbc824c852cf7ffec33203d26d9fb
 x
 Hcore-network/src/main/java/com/example/corenetwork/network/model/Info.kt,8\9\898d467741cbc5f04768cded60e5412b8269448d
-t
-Dapp/src/main/java/com/example/classicartmeetscompose/MainActivity.kt,7\7\77f28243f6584e6e0ea0a4f261fcf55f53df37b6

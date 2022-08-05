@@ -5,5 +5,5 @@ import retrofit2.http.GET
 
 interface ClassicArtRetrofitApi {
     @GET(value = "artworks/4")
-    suspend fun getFilms(): NetworkResponse<Data>
+    suspend fun getArtwork(): NetworkResponse<Data>
 }

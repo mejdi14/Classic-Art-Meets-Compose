@@ -24,6 +24,7 @@ import coil.decode.GifDecoder
 import coil.decode.ImageDecoderDecoder
 import coil.request.ImageRequest
 import coil.size.Size
+import com.bk.coredata.viewmodel.FilmViewModel
 import com.example.classicartmeetscompose.repositories.FilmViewModel
 import com.example.classicartmeetscompose.ui.theme.StudioGhibliMeetsComposeTheme
 import dagger.hilt.android.AndroidEntryPoint
@@ -37,7 +38,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         runBlocking {
             launch {
-                val list = viewmodel.getAllFilms()
+                val list = viewmodel.getAllArtworks()
                 Log.d("TAG", "onCreate: $list")
             }
         }
