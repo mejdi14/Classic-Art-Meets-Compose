@@ -4,6 +4,7 @@ import com.example.corenetwork.BuildConfig
 import com.example.corenetwork.network.ClassicArtNetwork
 import com.example.corenetwork.network.model.Data
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
+import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.json.Json
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.OkHttpClient
@@ -20,6 +21,8 @@ class ClassicArtRetrofitNetwork @Inject constructor(
         return networkApi.getFilms().data
     }
 
+    @Suppress("EXPERIMENTAL_IS_NOT_ENABLED")
+    @OptIn(ExperimentalSerializationApi::class)
     private val networkApi = Retrofit.Builder()
         .baseUrl(BuildConfig.BASE_URL)
         .client(
