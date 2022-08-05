@@ -27,8 +27,6 @@ import coil.size.Size
 import com.example.studioghiblimeetscompose.repositories.FilmViewModel
 import com.example.studioghiblimeetscompose.ui.theme.StudioGhibliMeetsComposeTheme
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.runBlocking
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
