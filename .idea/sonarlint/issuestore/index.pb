@@ -27,7 +27,5 @@ P
 Uapp/src/main/java/com/example/studioghiblimeetscompose/repositories/FilmRepository.kt,7\0\70ae9dafeb76a8b4385d31e316e322762f1dc054
 {
 Kcore-network/src/main/java/com/example/corenetwork/network/GhibliNetwork.kt,e\2\e21f0812936b77cc6662dff11bba9800726ee86c
->
-hooks/pre-push,6\d\6d52666d302bda7f252c489cf0beee3b2e24cc8a
 x
 Hcore-network/src/main/java/com/example/corenetwork/network/model/Film.kt,a\7\a7eff9e9bec86eadc30c278616fcee24969c65f3
