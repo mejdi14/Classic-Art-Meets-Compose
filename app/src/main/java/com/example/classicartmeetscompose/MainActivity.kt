@@ -27,17 +27,20 @@ import coil.size.Size
 import com.example.classicartmeetscompose.repositories.FilmViewModel
 import com.example.classicartmeetscompose.ui.theme.StudioGhibliMeetsComposeTheme
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     val viewmodel: FilmViewModel by viewModels()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        /*runBlocking {
+        runBlocking {
             launch {
                 val list = viewmodel.getAllFilms()
+                Log.d("TAG", "onCreate: $list")
             }
-        }*/
+        }
         setContent {
             StudioGhibliMeetsComposeTheme {
                 GifImage(this)

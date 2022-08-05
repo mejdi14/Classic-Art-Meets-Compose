@@ -21,5 +21,3 @@ Y
 )core-network/src/main/AndroidManifest.xml,d\e\decfb190da136adc616a6cb2246645b744468a7b
 …
 Uapp/src/main/java/com/example/studioghiblimeetscompose/repositories/FilmRepository.kt,7\0\70ae9dafeb76a8b4385d31e316e322762f1dc054
-{
-Kcore-network/src/main/java/com/example/corenetwork/network/GhibliNetwork.kt,e\2\e21f0812936b77cc6662dff11bba9800726ee86c

@@ -1,7 +1,7 @@
 package com.example.classicartmeetscompose.di
 
-import com.example.corenetwork.network.GhibliNetwork
-import com.example.corenetwork.network.retrofit.GhibliRetrofitNetwork
+import com.example.corenetwork.network.ClassicArtNetwork
+import com.example.corenetwork.network.retrofit.ClassicArtRetrofitNetwork
 import dagger.Binds
 import dagger.Module
 import dagger.Provides
@@ -14,7 +14,7 @@ import kotlinx.serialization.json.Json
 @InstallIn(SingletonComponent::class)
 interface DataModule {
     @Binds
-    fun bindsNiaNetwork(niANetwork: GhibliRetrofitNetwork): GhibliNetwork
+    fun bindsNiaNetwork(niANetwork: ClassicArtRetrofitNetwork): ClassicArtNetwork
 
     companion object {
         @Provides

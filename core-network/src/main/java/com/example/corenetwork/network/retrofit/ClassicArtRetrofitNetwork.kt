@@ -1,7 +1,8 @@
 package com.example.corenetwork.network.retrofit
 
 import com.example.corenetwork.BuildConfig
-import com.example.corenetwork.network.GhibliNetwork
+import com.example.corenetwork.network.ClassicArtNetwork
+import com.example.corenetwork.network.model.Artwork
 import com.example.corenetwork.network.model.Film
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import kotlinx.serialization.json.Json
@@ -13,10 +14,10 @@ import javax.inject.Inject
 import javax.inject.Singleton
 
 @Singleton
-class GhibliRetrofitNetwork @Inject constructor(
+class ClassicArtRetrofitNetwork @Inject constructor(
     networkJson: Json
-) : GhibliNetwork {
-    override suspend fun getTopics(): List<Film> {
+) : ClassicArtNetwork {
+    override suspend fun getTopics(): Artwork {
         return networkApi.getFilms().data
     }
 
@@ -33,5 +34,5 @@ class GhibliRetrofitNetwork @Inject constructor(
         )
         .addConverterFactory(networkJson.asConverterFactory("application/json".toMediaType()))
         .build()
-        .create(GhibliRetrofitApi::class.java)
+        .create(ClassicArtRetrofitApi::class.java)
 }
