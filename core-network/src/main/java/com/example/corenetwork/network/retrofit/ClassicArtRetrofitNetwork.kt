@@ -17,8 +17,8 @@ import javax.inject.Singleton
 class ClassicArtRetrofitNetwork @Inject constructor(
     networkJson: Json
 ) : ClassicArtNetwork {
-    override suspend fun getTopics(): Data {
-        return networkApi.getFilms().data
+    override suspend fun getArtwork(): Data {
+        return networkApi.getArtwork().data
     }
 
     @Suppress("EXPERIMENTAL_IS_NOT_ENABLED")

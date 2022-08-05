@@ -45,5 +45,3 @@ I
 core-network/build.gradle,9\f\9f6e8fdc80fcbc824c852cf7ffec33203d26d9fb
 x
 Hcore-network/src/main/java/com/example/corenetwork/network/model/Info.kt,8\9\898d467741cbc5f04768cded60e5412b8269448d
-t
-Dapp/src/main/java/com/example/classicartmeetscompose/MainActivity.kt,7\7\77f28243f6584e6e0ea0a4f261fcf55f53df37b6
