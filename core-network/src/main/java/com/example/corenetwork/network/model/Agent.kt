@@ -5,7 +5,8 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class Agent(
-    val data: AgentData? = AgentData(),
-    val info: Info,
-    val config: Config
+    val pagination: Pagination? = Pagination(),
+    val data: ArrayList<AgentData> = arrayListOf(),
+    val info: Info = Info(),
+    val config: Config = Config()
 )

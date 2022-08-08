@@ -27,8 +27,6 @@ Y
 settings.gradle,0\5\05efc8b1657769a27696d478ded1e95f38737233
 P
  app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
-z
-Jcore-network/src/main/java/com/example/corenetwork/network/model/Config.kt,a\f\afac8af8a9c70b7cc7e4a177fdadaca06080c115
 ?
 spotless.gradle,b\1\b12ec6d02d4de2c80cf1e9ce68083d3d124b0292
 >
@@ -39,5 +37,3 @@ Lcore-network/src/main/java/com/example/corenetwork/network/model/Contexts.kt,b
 Mcore-network/src/main/java/com/example/corenetwork/network/model/Thumbnail.kt,6\3\63304a48b99ae18ee1a4a0ab481766c644f08548
 I
 core-network/build.gradle,9\f\9f6e8fdc80fcbc824c852cf7ffec33203d26d9fb
-x
-Hcore-network/src/main/java/com/example/corenetwork/network/model/Info.kt,8\9\898d467741cbc5f04768cded60e5412b8269448d

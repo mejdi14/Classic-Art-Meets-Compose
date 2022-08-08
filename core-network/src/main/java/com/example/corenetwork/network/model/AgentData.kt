@@ -1,4 +1,6 @@
+import kotlinx.serialization.Serializable
 
+@Serializable
 data class AgentData(
 
     var id: Int? = null,
@@ -18,7 +20,7 @@ data class AgentData(
     var agentTypeId: Int? = null,
     var artworkIds: ArrayList<Int> = arrayListOf(),
     var siteIds: ArrayList<String> = arrayListOf(),
-    var suggestAutocompleteAll: SuggestAutocompleteAll?,
+    var suggestAutocompleteAll: SuggestAutocompleteAll? = null,
     var lastUpdatedSource: String? = null,
     var lastUpdated: String? = null,
     var timestamp: String? = null
