@@ -25,7 +25,6 @@ import coil.decode.ImageDecoderDecoder
 import coil.request.ImageRequest
 import coil.size.Size
 import com.bk.coredata.viewmodel.FilmViewModel
-import com.example.classicartmeetscompose.repositories.FilmViewModel
 import com.example.classicartmeetscompose.ui.theme.StudioGhibliMeetsComposeTheme
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
