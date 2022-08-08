@@ -9,6 +9,6 @@ class ArtworkRepository @Inject constructor(
 ) {
 
     suspend fun getAllArtworks(): Data {
-        return network.getTopics()
+        return network.getArtwork()
     }
 }

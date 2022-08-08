@@ -11,7 +11,7 @@ class FilmViewModel @Inject constructor(
 ) :
     ViewModel() {
 
-     suspend fun getAllArtworks(): Data {
+    suspend fun getAllArtworks(): Data {
         return artworkRepository.getAllArtworks()
     }
 }
