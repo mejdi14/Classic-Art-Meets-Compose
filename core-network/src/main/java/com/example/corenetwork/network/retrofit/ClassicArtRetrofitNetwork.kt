@@ -22,7 +22,7 @@ class ClassicArtRetrofitNetwork @Inject constructor(
         return networkApi.getALLArtworks().pagination
     }
 
-    override suspend fun getAgents(): Agent {
+    override suspend fun getAgent(): Agent {
         return networkApi.getAllAgents().pagination
     }
 

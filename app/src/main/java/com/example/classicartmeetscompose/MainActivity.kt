@@ -24,7 +24,8 @@ import coil.decode.GifDecoder
 import coil.decode.ImageDecoderDecoder
 import coil.request.ImageRequest
 import coil.size.Size
-import com.bk.coredata.viewmodel.FilmViewModel
+import com.bk.coredata.viewmodel.AgentViewModel
+import com.bk.coredata.viewmodel.ArtworkViewModel
 import com.example.classicartmeetscompose.ui.theme.StudioGhibliMeetsComposeTheme
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
@@ -32,12 +33,13 @@ import kotlinx.coroutines.runBlocking
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
-    val viewmodel: FilmViewModel by viewModels()
+    val viewmodel: ArtworkViewModel by viewModels()
+    val agentViewmodel: AgentViewModel by viewModels()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         runBlocking {
             launch {
-                val list = viewmodel.getAllArtworks()
+                val list = agentViewmodel.getAllAgents()
                 Log.d("TAG", "onCreate: $list")
             }
         }

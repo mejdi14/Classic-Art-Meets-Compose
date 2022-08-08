@@ -1,7 +1,9 @@
 package com.example.corenetwork.network.model
 
 import AgentData
+import kotlinx.serialization.Serializable
 
+@Serializable
 data class Agent(
     val data: AgentData,
     val info: Info,
