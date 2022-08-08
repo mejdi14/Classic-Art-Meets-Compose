@@ -1,11 +1,9 @@
-package com.example.corenetwork.network.model
-
+import com.example.corenetwork.network.model.Contexts
 import kotlinx.serialization.Serializable
 
 @Serializable
 data class SuggestAutocompleteAll(
-
-    var input: ArrayList<String> = arrayListOf(),
-    var contexts: Contexts? = Contexts()
-
+    val input: List<String>,
+    val weight: Int,
+    val contexts: Contexts
 )
