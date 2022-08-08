@@ -1,5 +1,6 @@
 package com.example.corenetwork.network.model
 
+import SuggestAutocompleteAll
 import kotlinx.serialization.Serializable
 
 @Serializable

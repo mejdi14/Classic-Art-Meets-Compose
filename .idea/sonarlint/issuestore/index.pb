@@ -35,12 +35,8 @@ Jcore-network/src/main/java/com/example/corenetwork/network/model/Config.kt,a\f
 hooks/pre-push,6\d\6d52666d302bda7f252c489cf0beee3b2e24cc8a
 |
 Lcore-network/src/main/java/com/example/corenetwork/network/model/Contexts.kt,b\4\b4af3321bc3dfcea3c7b3bbf663a6cbcffaa6c25
-y
-Icore-network/src/main/java/com/example/corenetwork/network/model/Color.kt,6\f\6f2398d8cdf2cad45a34f342df04cdad6e498e1a
 }
 Mcore-network/src/main/java/com/example/corenetwork/network/model/Thumbnail.kt,6\3\63304a48b99ae18ee1a4a0ab481766c644f08548
-Š
-Zcore-network/src/main/java/com/example/corenetwork/network/model/SuggestAutocompleteAll.kt,1\e\1e64265dcc0a019a3ba68cb24ecff747899969db
 I
 core-network/build.gradle,9\f\9f6e8fdc80fcbc824c852cf7ffec33203d26d9fb
 x
