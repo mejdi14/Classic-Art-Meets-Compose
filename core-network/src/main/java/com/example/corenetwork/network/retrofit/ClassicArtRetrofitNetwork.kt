@@ -4,6 +4,7 @@ import com.example.corenetwork.BuildConfig
 import com.example.corenetwork.network.ClassicArtNetwork
 import com.example.corenetwork.network.model.Agent
 import com.example.corenetwork.network.model.Artwork
+import com.example.corenetwork.network.model.Place
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.json.Json
@@ -24,6 +25,10 @@ class ClassicArtRetrofitNetwork @Inject constructor(
 
     override suspend fun getAgent(): Agent {
         return networkApi.getAllAgents().pagination
+    }
+
+    override suspend fun getPlace(): Place {
+        return networkApi.getAllPlaces().pagination
     }
 
     @Suppress("EXPERIMENTAL_IS_NOT_ENABLED")
