@@ -2,6 +2,7 @@ package com.example.corenetwork.network.retrofit
 
 import com.example.corenetwork.BuildConfig
 import com.example.corenetwork.network.ClassicArtNetwork
+import com.example.corenetwork.network.model.Artwork
 import com.example.corenetwork.network.model.Data
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import kotlinx.serialization.ExperimentalSerializationApi
@@ -17,8 +18,8 @@ import javax.inject.Singleton
 class ClassicArtRetrofitNetwork @Inject constructor(
     networkJson: Json
 ) : ClassicArtNetwork {
-    override suspend fun getArtwork(): Data {
-        return networkApi.getArtwork().data
+    override suspend fun getArtwork(): Artwork {
+        return networkApi.getArtwork().pagination
     }
 
     @Suppress("EXPERIMENTAL_IS_NOT_ENABLED")
