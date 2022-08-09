@@ -22,8 +22,6 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import io.getstream.whatsappclone.network.Dispatcher
-import io.getstream.whatsappclone.network.WhatsAppDispatchers
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
 
@@ -31,7 +29,7 @@ import kotlinx.coroutines.Dispatchers
 @InstallIn(SingletonComponent::class)
 object DispatchersModule {
 
-  @Provides
-  @Dispatcher(ClassicArtDispatchers.IO)
-  fun providesIODispatcher(): CoroutineDispatcher = Dispatchers.IO
+    @Provides
+    @Dispatcher(ClassicArtDispatchers.IO)
+    fun providesIODispatcher(): CoroutineDispatcher = Dispatchers.IO
 }
