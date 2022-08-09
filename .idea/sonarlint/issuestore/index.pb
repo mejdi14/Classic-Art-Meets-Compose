@@ -11,12 +11,8 @@ x
 Hbenchmark/src/main/java/com/example/benchmark/ExampleStartupBenchmark.kt,c\5\c5390b20cda05512e023cf151bf4af3bdfed13b7
 F
 benchmark/build.gradle,8\f\8f7e28a1d7e0962aabd9dbab5a371ce898a7abb4
-O
-core-network/consumer-rules.pro,c\0\c0861572cd072794791a0d1e1a632d1369f1afbc
 X
 (gradle/wrapper/gradle-wrapper.properties,f\b\fbe448ebfc3eb2d4e308f6b8b043666f5b57235e
-I
-gradle/libs.versions.toml,d\7\d7595319a0658be6f1ed500ad590d42e4b28bc4f
 Y
 )core-network/src/main/AndroidManifest.xml,d\e\decfb190da136adc616a6cb2246645b744468a7b
 Ž
@@ -35,22 +31,14 @@ P
 Lcore-network/src/main/java/com/example/corenetwork/network/model/Contexts.kt,b\4\b4af3321bc3dfcea3c7b3bbf663a6cbcffaa6c25
 }
 Mcore-network/src/main/java/com/example/corenetwork/network/model/Thumbnail.kt,6\3\63304a48b99ae18ee1a4a0ab481766c644f08548
-I
-core-network/build.gradle,9\f\9f6e8fdc80fcbc824c852cf7ffec33203d26d9fb
 x
 Hcore-network/src/main/java/com/example/corenetwork/network/model/Film.kt,a\7\a7eff9e9bec86eadc30c278616fcee24969c65f3
-F
-core-data/build.gradle,5\5\55f4c47c1b1acc7ae643dcc70bbb70b758750030
-@
-app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
 y
 Icore-network/src/main/java/com/example/corenetwork/network/model/Color.kt,6\f\6f2398d8cdf2cad45a34f342df04cdad6e498e1a
 x
 Hcore-network/src/main/java/com/example/corenetwork/network/model/Data.kt,b\6\b6a07242e05839af80e9ece0e01502352db011cc
 Š
 Zcore-network/src/main/java/com/example/corenetwork/network/model/SuggestAutocompleteAll.kt,1\e\1e64265dcc0a019a3ba68cb24ecff747899969db
-†
-Vcore-network/src/main/java/com/example/corenetwork/network/retrofit/NetworkResponse.kt,c\6\c6376a2d6d0ce9152de8c3352850a7668fe0e41b
 u
 Ecore-data/src/main/java/com/bk/coredata/repository/AgentRepository.kt,5\6\56e3b546ee1f4a2a652c7c99beb0a43d4950e329
 h
