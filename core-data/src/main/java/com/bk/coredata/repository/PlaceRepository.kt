@@ -20,7 +20,7 @@ class PlaceRepository @Inject constructor(
         return network.getPlace()
     }
 
-    private val getPlacesStream: Flow<List<PlaceData>> = flow {
+     fun getPlacesStream(): Flow<List<PlaceData>> = flow {
         emit(network.getPlace().data)
     }.flowOn(ioDispatcher)
 }

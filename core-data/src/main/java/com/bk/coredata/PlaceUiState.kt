@@ -1,6 +1,7 @@
-package com.example.classicartmeetscompose
+package com.bk.coredata
 
 import com.example.corenetwork.network.model.Place
+import com.example.corenetwork.network.model.PlaceData
 
 sealed interface PlaceUiState {
     /**
@@ -12,6 +13,6 @@ sealed interface PlaceUiState {
      * The feed is loaded with the given list of news resources.
      */
     data class Success(
-        val feed: List<Place>
+        val feed: List<PlaceData>
     ) : PlaceUiState
 }
