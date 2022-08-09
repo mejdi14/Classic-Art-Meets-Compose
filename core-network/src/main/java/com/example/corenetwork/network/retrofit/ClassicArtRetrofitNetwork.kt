@@ -37,4 +37,5 @@ class ClassicArtRetrofitNetwork @Inject constructor(
         .addConverterFactory(networkJson.asConverterFactory("application/json".toMediaType()))
         .build()
         .create(ClassicArtRetrofitApi::class.java)
+
 }

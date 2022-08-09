@@ -41,7 +41,5 @@ Icore-network/src/main/java/com/example/corenetwork/network/model/Color.kt,6\f\
 Mcore-network/src/main/java/com/example/corenetwork/network/model/Thumbnail.kt,6\3\63304a48b99ae18ee1a4a0ab481766c644f08548
 Š
 Zcore-network/src/main/java/com/example/corenetwork/network/model/SuggestAutocompleteAll.kt,1\e\1e64265dcc0a019a3ba68cb24ecff747899969db
-I
-core-network/build.gradle,9\f\9f6e8fdc80fcbc824c852cf7ffec33203d26d9fb
 x
 Hcore-network/src/main/java/com/example/corenetwork/network/model/Info.kt,8\9\898d467741cbc5f04768cded60e5412b8269448d
