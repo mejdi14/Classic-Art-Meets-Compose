@@ -7,7 +7,6 @@ import com.bk.coredata.Dispatcher
 import com.bk.coredata.PlaceUiState
 import com.bk.coredata.repository.PlaceRepository
 import com.example.corenetwork.network.model.Place
-import com.example.corenetwork.network.model.PlaceData
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.flow.*
@@ -23,7 +22,6 @@ class PlaceViewModel @Inject constructor(
     suspend fun getAllPlaces(): Place {
         return placeRepository.getAllPlaces()
     }
-
 
     val whatsAppUserState: StateFlow<PlaceUiState> =
         placeRepository.getPlacesStream()
