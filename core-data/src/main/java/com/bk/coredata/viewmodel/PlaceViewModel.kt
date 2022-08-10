@@ -1,5 +1,6 @@
 package com.bk.coredata.viewmodel
 
+import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.bk.coredata.ClassicArtDispatchers
@@ -29,6 +30,7 @@ class PlaceViewModel @Inject constructor(
         placeRepository.getPlacesStream()
             .flatMapLatest {
                 if (it.isSuccess) {
+                    Log.d("TAG", "success: ${it.getOrNull()}")
                     flowOf(PlaceUiState.Success(it.getOrThrow()))
                 } else {
                     flowOf(PlaceUiState.Error)

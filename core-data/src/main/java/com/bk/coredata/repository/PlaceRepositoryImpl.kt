@@ -1,8 +1,10 @@
 package com.bk.coredata.repository
 
+import android.util.Log
 import com.bk.coredata.ClassicArtDispatchers
 import com.bk.coredata.Dispatcher
 import com.example.corenetwork.network.ClassicArtNetwork
+import com.example.corenetwork.network.model.Config
 import com.example.corenetwork.network.model.Place
 import com.example.corenetwork.network.model.PlaceData
 import kotlinx.coroutines.CoroutineDispatcher
@@ -20,7 +22,8 @@ class PlaceRepositoryImpl @Inject constructor(
         return network.getPlace()
     }
 
-    override fun getPlacesStream(): Flow<Result<List<PlaceData>>> = flow {
-        emit(Result.success(network.getPlace().data))
+    override fun getPlacesStream(): Flow<Result<Config>> = flow {
+        Log.d("TAG", "getPlacesStream: ${network.getPlace().config}")
+        emit(Result.success(network.getPlace().config))
     }.flowOn(ioDispatcher)
 }

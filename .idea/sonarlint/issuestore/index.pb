@@ -53,7 +53,5 @@ u
 Ecore-data/src/main/java/com/bk/coredata/viewmodel/ArtworkViewModel.kt,b\2\b2f22c6ee2ca4eaf4e096f101503fcafdc9927fa
 z
 Jcore-network/src/main/java/com/example/corenetwork/network/model/Config.kt,a\f\afac8af8a9c70b7cc7e4a177fdadaca06080c115
-}
-Mcore-network/src/main/java/com/example/corenetwork/network/model/PlaceData.kt,8\9\890e952a2eb7feda155c63faa3faa64b71ac9a6a
 y
 Icore-network/src/main/java/com/example/corenetwork/network/model/Agent.kt,1\1\1179faf89144cd6b74142123ba03d7d9855ec1cb

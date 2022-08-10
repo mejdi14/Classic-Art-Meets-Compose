@@ -12,15 +12,20 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.State
 import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.sp
 import coil.ImageLoader
 import coil.compose.rememberAsyncImagePainter
 import coil.decode.GifDecoder
@@ -33,15 +38,16 @@ import com.bk.coredata.viewmodel.ArtworkViewModel
 import com.bk.coredata.viewmodel.PlaceViewModel
 import com.example.classicartmeetscompose.ui.theme.StudioGhibliMeetsComposeTheme
 import dagger.hilt.android.AndroidEntryPoint
-import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
+import androidx.hilt.navigation.compose.hiltViewModel
+import kotlin.math.log
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     val viewmodel: ArtworkViewModel by viewModels()
     val agentViewmodel: AgentViewModel by viewModels()
-    //val placeViewModel: PlaceViewModel by HiltViewModel
+
     
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -54,15 +60,21 @@ class MainActivity : ComponentActivity() {
         }
         setContent {
             StudioGhibliMeetsComposeTheme {
-                HomeScreen(whatsAppCallsViewModel = hiltViewModel())
+                HomeScreen()
             }
         }
     }
 
     @Composable
-    private fun HomeScreen(placeViewModel: PlaceViewModel) {
-        val placesUiState = placeViewModel.placesUiState.collectAsState()
-           ContentHolder(placesUiState)
+    private fun HomeScreen(viewModel: PlaceViewModel = hiltViewModel()) {
+        val placesUiState by  viewModel.placesUiState.collectAsState()
+        Log.d("TAG", "HomeScreen: $placesUiState")
+      /*  LazyColumn(modifier = Modifier.fillMaxHeight()) {
+            items(items = if(placesUiState is PlaceUiState.Success) (placesUiState as PlaceUiState.Success).feed else arrayListOf(), itemContent = { item ->
+                Log.d("TAG", "HomeScreenitem: $item")
+               Text(text = item.title.toString())
+            })
+        }*/
            /* when(placesUiState){
                 PlaceUiState.Success -> {
                     LazyColumn {
@@ -78,13 +90,6 @@ class MainActivity : ComponentActivity() {
                 }
             }*/
 
-    }
-
-    private @Composable
-    fun ContentHolder(placesUiState: State<PlaceUiState>) {
-       when(placesUiState.value){
-           PlaceUiState.Success
-       }
     }
 }
 
