@@ -133,6 +133,5 @@ fun GifImage(context: Context) {
 @Composable
 fun DefaultPreview() {
     StudioGhibliMeetsComposeTheme {
-        Greeting("very nice")
     }
 }
