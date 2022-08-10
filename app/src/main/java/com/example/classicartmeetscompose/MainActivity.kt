@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.activity.viewModels
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -18,14 +17,12 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.State
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.sp
+import androidx.hilt.navigation.compose.hiltViewModel
 import coil.ImageLoader
 import coil.compose.rememberAsyncImagePainter
 import coil.decode.GifDecoder
@@ -33,20 +30,14 @@ import coil.decode.ImageDecoderDecoder
 import coil.request.ImageRequest
 import coil.size.Size
 import com.bk.coredata.PlaceUiState
-import com.bk.coredata.viewmodel.AgentViewModel
-import com.bk.coredata.viewmodel.ArtworkViewModel
 import com.bk.coredata.viewmodel.PlaceViewModel
 import com.example.classicartmeetscompose.ui.theme.StudioGhibliMeetsComposeTheme
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
-import androidx.hilt.navigation.compose.hiltViewModel
-import kotlin.math.log
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
-    val viewmodel: ArtworkViewModel by viewModels()
-    val agentViewmodel: AgentViewModel by viewModels()
 
     
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -87,11 +78,6 @@ fun EnterScreen(context: Context) {
             GifImage(context = context)
         }
     }
-}
-
-@Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
 }
 
 @Composable
