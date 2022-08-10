@@ -11,9 +11,16 @@ import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
 import javax.inject.Inject
 
-interface PlaceRepository {
+class PlaceRepositoryImpl @Inject constructor(
+    @Dispatcher(ClassicArtDispatchers.IO) private val ioDispatcher: CoroutineDispatcher,
+    private val network: ClassicArtNetwork
+) : PlaceRepository{
 
-    suspend fun getAllPlaces(): Place
+    override suspend fun getAllPlaces(): Place {
+        return network.getPlace()
+    }
 
-    fun getPlacesStream(): Flow<Result<List<PlaceData>>>
+    override fun getPlacesStream(): Flow<Result<List<PlaceData>>> = flow {
+        emit(Result.success(network.getPlace().data))
+    }.flowOn(ioDispatcher)
 }
