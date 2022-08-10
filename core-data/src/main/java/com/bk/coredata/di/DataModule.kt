@@ -27,7 +27,5 @@ interface DataModule {
     }
 
     @Binds
-    fun bindsPlaceRepository(
-        placeRepositoryImpl: PlaceRepositoryImpl
-    ): PlaceRepository
+    fun bindsPlaceRepository(placeRepositoryImpl: PlaceRepositoryImpl): PlaceRepository
 }

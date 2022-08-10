@@ -39,9 +39,7 @@ import kotlinx.coroutines.runBlocking
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
-
         super.onCreate(savedInstanceState)
         runBlocking {
             launch {
@@ -61,12 +59,15 @@ class MainActivity : ComponentActivity() {
         val placesUiState by viewModel.placesUiState.collectAsState()
         Log.d("TAG", "HomeScreen: $placesUiState")
         LazyColumn(modifier = Modifier.fillMaxHeight()) {
-            items(items = if (placesUiState is PlaceUiState.Success)
-                (placesUiState as PlaceUiState.Success).feed.data
-            else arrayListOf(), itemContent = { item ->
-                Log.d("TAG", "HomeScreenitem: $item")
-                Text(text = item.title.toString())
-            })
+            items(
+                items = if (placesUiState is PlaceUiState.Success) {
+                    (placesUiState as PlaceUiState.Success).feed.data
+                } else arrayListOf(),
+                itemContent = { item ->
+                    Log.d("TAG", "HomeScreenitem: $item")
+                    Text(text = item.title.toString())
+                }
+            )
         }
     }
 }

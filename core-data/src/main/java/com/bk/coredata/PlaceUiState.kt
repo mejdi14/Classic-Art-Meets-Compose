@@ -1,8 +1,6 @@
 package com.bk.coredata
 
-import com.example.corenetwork.network.model.Config
 import com.example.corenetwork.network.model.Place
-import com.example.corenetwork.network.model.PlaceData
 
 sealed interface PlaceUiState {
     /**
