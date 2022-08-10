@@ -13,8 +13,11 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.State
+import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
@@ -24,11 +27,13 @@ import coil.decode.GifDecoder
 import coil.decode.ImageDecoderDecoder
 import coil.request.ImageRequest
 import coil.size.Size
+import com.bk.coredata.PlaceUiState
 import com.bk.coredata.viewmodel.AgentViewModel
 import com.bk.coredata.viewmodel.ArtworkViewModel
 import com.bk.coredata.viewmodel.PlaceViewModel
 import com.example.classicartmeetscompose.ui.theme.StudioGhibliMeetsComposeTheme
 import dagger.hilt.android.AndroidEntryPoint
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 
@@ -36,20 +41,50 @@ import kotlinx.coroutines.runBlocking
 class MainActivity : ComponentActivity() {
     val viewmodel: ArtworkViewModel by viewModels()
     val agentViewmodel: AgentViewModel by viewModels()
-    val placeViewModel: PlaceViewModel by viewModels()
+    //val placeViewModel: PlaceViewModel by HiltViewModel
+    
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         runBlocking {
             launch {
-                val list = placeViewModel.getAllPlaces()
-                Log.d("TAG", "onCreate: $list")
+              /*  val list = placeViewModel.getAllPlaces()
+                Log.d("TAG", "onCreate: $list")*/
             }
         }
         setContent {
             StudioGhibliMeetsComposeTheme {
-                GifImage(this)
+                HomeScreen(whatsAppCallsViewModel = hiltViewModel())
             }
         }
+    }
+
+    @Composable
+    private fun HomeScreen(placeViewModel: PlaceViewModel) {
+        val placesUiState = placeViewModel.placesUiState.collectAsState()
+           ContentHolder(placesUiState)
+           /* when(placesUiState){
+                PlaceUiState.Success -> {
+                    LazyColumn {
+                        items(
+                            items = placesUiState.feed,
+                            key = { it.name }
+                        ) {
+                            WhatsAppCallHistory(whatsAppUser = it) {
+                                composeNavigator.navigate(WhatsAppScreens.CallInfo.createRoute(whatsAppUser = it))
+                            }
+                        }
+                    }
+                }
+            }*/
+
+    }
+
+    private @Composable
+    fun ContentHolder(placesUiState: State<PlaceUiState>) {
+       when(placesUiState.value){
+           PlaceUiState.Success
+       }
     }
 }
 
