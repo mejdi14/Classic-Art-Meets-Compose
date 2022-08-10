@@ -155,10 +155,6 @@ fun GifImage(context: Context) {
     )
 }
 
-@Composable
-fun SplashScreenTransaction() {
-}
-
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
