@@ -7,11 +7,11 @@ import retrofit2.http.GET
 
 interface ClassicArtRetrofitApi {
     @GET(value = "artworks")
-    suspend fun getALLArtworks(): NetworkResponse<Artwork>
+    suspend fun getALLArtworks(): Artwork
 
     @GET(value = "agents")
-    suspend fun getAllAgents(): NetworkResponse<Agent>
+    suspend fun getAllAgents(): Agent
 
     @GET(value = "places")
-    suspend fun getAllPlaces(): NetworkResponse<Place>
+    suspend fun getAllPlaces(): Place
 }

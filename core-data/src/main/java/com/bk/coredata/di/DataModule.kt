@@ -1,5 +1,7 @@
 package com.example.classicartmeetscompose.di
 
+import com.bk.coredata.repository.PlaceRepository
+import com.bk.coredata.repository.PlaceRepositoryImpl
 import com.example.corenetwork.network.ClassicArtNetwork
 import com.example.corenetwork.network.retrofit.ClassicArtRetrofitNetwork
 import dagger.Binds
@@ -23,4 +25,7 @@ interface DataModule {
             ignoreUnknownKeys = true
         }
     }
+
+    @Binds
+    fun bindsPlaceRepository(placeRepositoryImpl: PlaceRepositoryImpl): PlaceRepository
 }

@@ -20,15 +20,15 @@ class ClassicArtRetrofitNetwork @Inject constructor(
     networkJson: Json
 ) : ClassicArtNetwork {
     override suspend fun getArtwork(): Artwork {
-        return networkApi.getALLArtworks().pagination
+        return networkApi.getALLArtworks()
     }
 
     override suspend fun getAgent(): Agent {
-        return networkApi.getAllAgents().pagination
+        return networkApi.getAllAgents()
     }
 
     override suspend fun getPlace(): Place {
-        return networkApi.getAllPlaces().pagination
+        return networkApi.getAllPlaces()
     }
 
     @Suppress("EXPERIMENTAL_IS_NOT_ENABLED")

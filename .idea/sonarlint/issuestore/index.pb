@@ -41,8 +41,6 @@ Hcore-network/src/main/java/com/example/corenetwork/network/model/Data.kt,b\6\b
 Zcore-network/src/main/java/com/example/corenetwork/network/model/SuggestAutocompleteAll.kt,1\e\1e64265dcc0a019a3ba68cb24ecff747899969db
 u
 Ecore-data/src/main/java/com/bk/coredata/repository/AgentRepository.kt,5\6\56e3b546ee1f4a2a652c7c99beb0a43d4950e329
-h
-8core-data/src/main/java/com/bk/coredata/di/DataModule.kt,1\e\1e1b9576c691f9bb689167ccb490619dfd6ac05d
 x
 Hcore-network/src/main/java/com/example/corenetwork/network/model/Info.kt,8\9\898d467741cbc5f04768cded60e5412b8269448d
 {
@@ -55,7 +53,5 @@ u
 Ecore-data/src/main/java/com/bk/coredata/viewmodel/ArtworkViewModel.kt,b\2\b2f22c6ee2ca4eaf4e096f101503fcafdc9927fa
 z
 Jcore-network/src/main/java/com/example/corenetwork/network/model/Config.kt,a\f\afac8af8a9c70b7cc7e4a177fdadaca06080c115
-}
-Mcore-network/src/main/java/com/example/corenetwork/network/model/PlaceData.kt,8\9\890e952a2eb7feda155c63faa3faa64b71ac9a6a
 y
 Icore-network/src/main/java/com/example/corenetwork/network/model/Agent.kt,1\1\1179faf89144cd6b74142123ba03d7d9855ec1cb
