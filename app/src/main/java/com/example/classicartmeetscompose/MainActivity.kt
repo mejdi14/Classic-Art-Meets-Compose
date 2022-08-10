@@ -75,21 +75,6 @@ class MainActivity : ComponentActivity() {
                Text(text = item.title.toString())
             })
         }
-           /* when(placesUiState){
-                PlaceUiState.Success -> {
-                    LazyColumn {
-                        items(
-                            items = placesUiState.feed,
-                            key = { it.name }
-                        ) {
-                            WhatsAppCallHistory(whatsAppUser = it) {
-                                composeNavigator.navigate(WhatsAppScreens.CallInfo.createRoute(whatsAppUser = it))
-                            }
-                        }
-                    }
-                }
-            }*/
-
     }
 }
 
