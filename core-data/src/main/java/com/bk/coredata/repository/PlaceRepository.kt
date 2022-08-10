@@ -16,5 +16,5 @@ interface PlaceRepository {
 
     suspend fun getAllPlaces(): Place
 
-    fun getPlacesStream(): Flow<Result<Config>>
+    fun getPlacesStream(): Flow<Result<Place>>
 }

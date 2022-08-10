@@ -69,12 +69,12 @@ class MainActivity : ComponentActivity() {
     private fun HomeScreen(viewModel: PlaceViewModel = hiltViewModel()) {
         val placesUiState by  viewModel.placesUiState.collectAsState()
         Log.d("TAG", "HomeScreen: $placesUiState")
-      /*  LazyColumn(modifier = Modifier.fillMaxHeight()) {
-            items(items = if(placesUiState is PlaceUiState.Success) (placesUiState as PlaceUiState.Success).feed else arrayListOf(), itemContent = { item ->
+        LazyColumn(modifier = Modifier.fillMaxHeight()) {
+            items(items = if(placesUiState is PlaceUiState.Success) (placesUiState as PlaceUiState.Success).feed.data else arrayListOf(), itemContent = { item ->
                 Log.d("TAG", "HomeScreenitem: $item")
                Text(text = item.title.toString())
             })
-        }*/
+        }
            /* when(placesUiState){
                 PlaceUiState.Success -> {
                     LazyColumn {

@@ -22,8 +22,8 @@ class PlaceRepositoryImpl @Inject constructor(
         return network.getPlace()
     }
 
-    override fun getPlacesStream(): Flow<Result<Config>> = flow {
-        Log.d("TAG", "getPlacesStream: ${network.getPlace().config}")
-        emit(Result.success(network.getPlace().config))
+    override fun getPlacesStream(): Flow<Result<Place>> = flow {
+        Log.d("TAG", "getPlacesStream: ${network.getPlace()}")
+        emit(Result.success(network.getPlace()))
     }.flowOn(ioDispatcher)
 }
