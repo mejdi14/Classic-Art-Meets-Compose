@@ -9,6 +9,7 @@ import com.bk.coredata.repository.PlaceRepository
 import com.example.corenetwork.network.model.Place
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CoroutineDispatcher
+import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.*
 import javax.inject.Inject
 
@@ -23,7 +24,8 @@ class PlaceViewModel @Inject constructor(
         return placeRepository.getAllPlaces()
     }
 
-    val whatsAppUserState: StateFlow<PlaceUiState> =
+    @ExperimentalCoroutinesApi
+    val placesUiState: StateFlow<PlaceUiState> =
         placeRepository.getPlacesStream()
             .flatMapLatest {
                 if (it.isSuccess) {
