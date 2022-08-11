@@ -29,7 +29,7 @@ import coil.request.ImageRequest
 import coil.size.Size
 import com.bk.coredata.PlaceUiState
 import com.bk.coredata.viewmodel.PlaceViewModel
-import com.example.classicartmeetscompose.ui.theme.StudioGhibliMeetsComposeTheme
+import com.example.classicartmeetscompose.ui.theme.ClassicArtComposeTheme
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
@@ -46,7 +46,7 @@ class MainActivity : ComponentActivity() {
             }
         }
         setContent {
-            StudioGhibliMeetsComposeTheme {
+            ClassicArtComposeTheme {
                 Box(modifier = Modifier.fillMaxSize().background(color = Color(0xffffff)),
                 )
                 SimpleCoilImage(this)
@@ -132,6 +132,6 @@ fun GifImage(context: Context) {
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
-    StudioGhibliMeetsComposeTheme {
+    ClassicArtComposeTheme {
     }
 }
