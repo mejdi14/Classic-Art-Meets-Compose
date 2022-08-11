@@ -47,6 +47,8 @@ class MainActivity : ComponentActivity() {
         }
         setContent {
             StudioGhibliMeetsComposeTheme {
+                Box(modifier = Modifier.fillMaxSize().background(color = Color(0xffffff)),
+                )
                 SimpleCoilImage(this)
             }
         }
@@ -86,13 +88,13 @@ fun SimpleCoilImage(context: Context) {
     Image(
         painter = rememberAsyncImagePainter(
             ImageRequest.Builder(context)
-                .data(data = R.drawable.dev_logo)
+                .data(data = R.drawable.third_dev_logo)
                 .apply(block = {
                     size(size = Size.ORIGINAL)
                 }).build()
         ),
         contentDescription = null,
-        modifier = Modifier.fillMaxSize().padding(100.dp)
+        modifier = Modifier.fillMaxSize().padding(50.dp)
     )
 }
 
