@@ -5,7 +5,7 @@ import androidx.navigation.compose.rememberNavController
 import com.example.classicartmeetscompose.ui.theme.ClassicArtComposeTheme
 
 @Composable
-fun HomeRoute(){
+fun HomeRoute() {
     HomeScreen()
 }
 
