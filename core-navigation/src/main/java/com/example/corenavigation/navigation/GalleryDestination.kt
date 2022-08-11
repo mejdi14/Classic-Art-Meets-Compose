@@ -9,7 +9,7 @@ object GalleryDestination : ClassicArtNavigationDestination {
     override val destination = "gallery_destination"
 }
 
-fun NavGraphBuilder.forYouGraph(
+fun NavGraphBuilder.galleryGraph(
 
 ) {
     composable(route = GalleryDestination.route) {
