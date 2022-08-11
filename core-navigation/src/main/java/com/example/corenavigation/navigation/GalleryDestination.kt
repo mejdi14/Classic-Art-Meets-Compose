@@ -2,16 +2,17 @@ package com.example.corenavigation.navigation
 
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
+import com.example.classicartmeetscompose.ui.screen.GalleryRoute
 
 object GalleryDestination : ClassicArtNavigationDestination {
-    override val route = "for_you_route"
-    override val destination = "for_you_destination"
+    override val route = "gallery_route"
+    override val destination = "gallery_destination"
 }
 
 fun NavGraphBuilder.forYouGraph(
 
 ) {
     composable(route = GalleryDestination.route) {
-        ForYouRoute()
+        GalleryRoute()
     }
 }
