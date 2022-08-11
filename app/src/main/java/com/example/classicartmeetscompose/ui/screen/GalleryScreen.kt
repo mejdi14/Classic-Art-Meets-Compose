@@ -9,7 +9,6 @@ fun GalleryRoute() {
     GalleryScreen()
 }
 
-
 @Composable
 fun GalleryScreen() {
     ClassicArtComposeTheme {

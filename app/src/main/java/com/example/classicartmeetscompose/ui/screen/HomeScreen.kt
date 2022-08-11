@@ -9,7 +9,6 @@ fun HomeRoute() {
     HomeScreen()
 }
 
-
 @Composable
 fun HomeScreen() {
     ClassicArtComposeTheme {
