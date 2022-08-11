@@ -9,10 +9,7 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxHeight
-import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.Text
@@ -22,6 +19,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import coil.ImageLoader
 import coil.compose.rememberAsyncImagePainter
@@ -31,7 +29,8 @@ import coil.request.ImageRequest
 import coil.size.Size
 import com.bk.coredata.PlaceUiState
 import com.bk.coredata.viewmodel.PlaceViewModel
-import com.example.classicartmeetscompose.ui.theme.StudioGhibliMeetsComposeTheme
+import com.example.classicartmeetscompose.ui.screen.MainScreen
+import com.example.classicartmeetscompose.ui.theme.ClassicArtComposeTheme
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
@@ -48,9 +47,13 @@ class MainActivity : ComponentActivity() {
             }
         }
         setContent {
-            StudioGhibliMeetsComposeTheme {
-                HomeScreen()
-            }
+            /*ClassicArtComposeTheme {
+                Box(
+                    modifier = Modifier.fillMaxSize().background(color = Color(0xFFf7f9f5))
+                )
+                SimpleCoilImage(this)
+            }*/
+            MainScreen()
         }
     }
 
@@ -88,13 +91,13 @@ fun SimpleCoilImage(context: Context) {
     Image(
         painter = rememberAsyncImagePainter(
             ImageRequest.Builder(context)
-                .data(data = "https://cdn.dribbble.com/users/5462404/screenshots/14049276/media/ceb899e0922f7ca5edaf0d01802f9379.jpeg")
+                .data(data = R.drawable.third_dev_logo)
                 .apply(block = {
                     size(size = Size.ORIGINAL)
                 }).build()
         ),
         contentDescription = null,
-        modifier = Modifier.fillMaxSize()
+        modifier = Modifier.fillMaxSize().padding(50.dp)
     )
 }
 
@@ -132,7 +135,6 @@ fun GifImage(context: Context) {
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
-    StudioGhibliMeetsComposeTheme {
-        Greeting("very nice")
+    ClassicArtComposeTheme {
     }
 }

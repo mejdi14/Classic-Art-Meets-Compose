@@ -57,6 +57,7 @@ android {
 dependencies {
     implementation(project(":core-network"))
     implementation(project(":core-data"))
+    implementation(project(":core-navigation"))
     implementation libs.kotlin.compiler
     implementation libs.compose.compiler
     implementation libs.compose.material
