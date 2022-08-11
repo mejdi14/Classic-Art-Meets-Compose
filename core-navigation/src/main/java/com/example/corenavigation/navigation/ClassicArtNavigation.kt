@@ -1,6 +1,10 @@
 package com.example.corenavigation.navigation
 
-class NiaTopLevelNavigation(private val navController: Navho) {
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.navigation.NavGraph.Companion.findStartDestination
+import androidx.navigation.NavHostController
+
+class ClassicArtNavigation(private val navController: NavHostController) {
 
     fun navigateTo(destination: TopLevelDestination) {
         navController.navigate(destination.route) {
