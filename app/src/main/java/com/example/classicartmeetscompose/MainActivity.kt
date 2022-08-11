@@ -47,7 +47,8 @@ class MainActivity : ComponentActivity() {
         }
         setContent {
             ClassicArtComposeTheme {
-                Box(modifier = Modifier.fillMaxSize().background(color = Color(0xFFf7f9f5)),
+                Box(
+                    modifier = Modifier.fillMaxSize().background(color = Color(0xFFf7f9f5))
                 )
                 SimpleCoilImage(this)
             }
