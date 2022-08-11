@@ -3,7 +3,7 @@ package com.example.corenavigation.navigation
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
 
-object GalleryDestination : NiaNavigationDestination {
+object GalleryDestination : ClassicArtNavigationDestination {
     override val route = "for_you_route"
     override val destination = "for_you_destination"
 }

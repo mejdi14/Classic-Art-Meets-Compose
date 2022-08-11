@@ -10,8 +10,7 @@ import androidx.navigation.NavDestination
 import androidx.navigation.NavDestination.Companion.hierarchy
 
 @Composable
-private fun NiaBottomBar(onNavigateToTopLevelDestination: (TopLevelDestination) -> Unit,
-                         currentDestination: NavDestination?) {
+private fun NiaBottomBar(onNavigateToTopLevelDestination: (TopLevelDestination) -> Unit, currentDestination: NavDestination?) {
     // Wrap the navigation bar in a surface so the color behind the system
     // navigation is equal to the container color of the navigation bar.
     Surface(color = Color(0xFFFFFFFF)) {
