@@ -10,7 +10,7 @@ import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.NavHostController
 import com.example.corenavigation.R
 
-class ClassicArtNavigation(private val navController: NavHostController) {
+class ClassicArtTopLevelNavigation(private val navController: NavHostController) {
 
     fun navigateTo(destination: TopLevelDestination) {
         navController.navigate(destination.route) {

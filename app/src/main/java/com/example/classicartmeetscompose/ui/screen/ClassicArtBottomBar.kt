@@ -11,10 +11,7 @@ import com.example.corenavigation.navigation.TOP_LEVEL_DESTINATIONS
 import com.example.corenavigation.navigation.TopLevelDestination
 
 @Composable
-private fun NiaBottomBar(
-    onNavigateToTopLevelDestination: (TopLevelDestination) -> Unit,
-    currentDestination: NavDestination?
-) {
+fun ClassicArtBottomBar(onNavigateToTopLevelDestination: (TopLevelDestination) -> Unit, currentDestination: NavDestination?) {
     Surface(color = Color(0xFFFFFFFF)) {
         BottomAppBar(
             elevation = 0.dp

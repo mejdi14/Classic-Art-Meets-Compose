@@ -29,6 +29,7 @@ import coil.request.ImageRequest
 import coil.size.Size
 import com.bk.coredata.PlaceUiState
 import com.bk.coredata.viewmodel.PlaceViewModel
+import com.example.classicartmeetscompose.ui.screen.MainScreen
 import com.example.classicartmeetscompose.ui.theme.ClassicArtComposeTheme
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
@@ -46,12 +47,13 @@ class MainActivity : ComponentActivity() {
             }
         }
         setContent {
-            ClassicArtComposeTheme {
+            /*ClassicArtComposeTheme {
                 Box(
                     modifier = Modifier.fillMaxSize().background(color = Color(0xFFf7f9f5))
                 )
                 SimpleCoilImage(this)
-            }
+            }*/
+            MainScreen()
         }
     }
 
