@@ -1,4 +1,4 @@
-package com.example.classicartmeetscompose.ui.screen
+package com.bk.feature.gallery.ui
 
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.Text
