@@ -15,11 +15,9 @@ fun ClassicArtNavigationHost(
     NavHost(
         navController = navController,
         startDestination = startDestination,
-        modifier = modifier,
+        modifier = modifier
     ) {
-        homeGraph(
-        )
-        galleryGraph(
-        )
+        homeGraph()
+        galleryGraph()
     }
 }
