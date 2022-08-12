@@ -1,4 +1,4 @@
-package com.bk.feature_home
+package com.bk.feature
 
 import org.junit.Test
 
