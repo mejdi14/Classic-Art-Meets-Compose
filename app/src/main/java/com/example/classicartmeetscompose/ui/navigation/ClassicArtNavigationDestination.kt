@@ -1,4 +1,4 @@
-package com.example.corenavigation.navigation
+package com.example.core.navigation
 
 interface ClassicArtNavigationDestination {
     val route: String

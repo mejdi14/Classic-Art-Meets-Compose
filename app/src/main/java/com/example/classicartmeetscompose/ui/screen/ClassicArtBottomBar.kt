@@ -7,8 +7,8 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavDestination
 import androidx.navigation.NavDestination.Companion.hierarchy
-import com.example.corenavigation.navigation.TOP_LEVEL_DESTINATIONS
-import com.example.corenavigation.navigation.TopLevelDestination
+import com.example.core.navigation.TOP_LEVEL_DESTINATIONS
+import com.example.core.navigation.TopLevelDestination
 
 @Composable
 fun ClassicArtBottomBar(onNavigateToTopLevelDestination: (TopLevelDestination) -> Unit, currentDestination: NavDestination?) {

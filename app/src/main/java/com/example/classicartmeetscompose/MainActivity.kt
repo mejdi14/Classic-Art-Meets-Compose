@@ -27,8 +27,8 @@ import coil.decode.GifDecoder
 import coil.decode.ImageDecoderDecoder
 import coil.request.ImageRequest
 import coil.size.Size
-import com.bk.coredata.PlaceUiState
-import com.bk.coredata.viewmodel.PlaceViewModel
+import com.bk.core.data.PlaceUiState
+import com.bk.core.data.viewmodel.PlaceViewModel
 import com.example.classicartmeetscompose.ui.screen.MainScreen
 import com.example.classicartmeetscompose.ui.theme.ClassicArtComposeTheme
 import dagger.hilt.android.AndroidEntryPoint

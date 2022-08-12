@@ -11,8 +11,8 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.example.classicartmeetscompose.ui.theme.ClassicArtComposeTheme
-import com.example.corenavigation.navigation.ClassicArtNavigationHost
-import com.example.corenavigation.navigation.ClassicArtTopLevelNavigation
+import com.example.core.navigation.ClassicArtNavigationHost
+import com.example.core.navigation.ClassicArtTopLevelNavigation
 
 @Composable
 fun MainScreen() {
