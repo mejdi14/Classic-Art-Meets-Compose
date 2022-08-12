@@ -11,6 +11,9 @@ kotlinx-serialization = "1.3.2"
 # Lifecycle
 lifecycle = "2.3.1"
 
+# Hilt-Navigation
+hilt-navigation = "1.0.0"
+
 # Coil
 coil = "2.1.0"
 
@@ -51,6 +54,9 @@ kotlinx-serialization = { module = "org.jetbrains.kotlinx:kotlinx-serialization-
 
 # Lifecycle
 lifecycle-runtime = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle" }
+
+# Hilt navigation
+hilt-navigation = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hilt-navigation" }
 
 #Retrofit
 retrofit-core = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
