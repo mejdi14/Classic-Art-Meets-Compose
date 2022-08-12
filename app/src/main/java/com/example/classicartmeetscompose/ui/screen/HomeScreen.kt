@@ -16,7 +16,7 @@ fun HomeRoute() {
 fun HomeScreen() {
     ClassicArtComposeTheme {
         val navController = rememberNavController()
-        
+
         Text(text = "hello from home", modifier = Modifier.fillMaxSize())
     }
 }
