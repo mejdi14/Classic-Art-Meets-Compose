@@ -16,7 +16,7 @@ import com.example.corenavigation.navigation.ClassicArtTopLevelNavigation
 
 @Composable
 fun MainScreen() {
-    ClassicArtComposeTheme() {
+    ClassicArtComposeTheme {
         val navController = rememberNavController()
         val classicArtTopLevelNavigation = remember(navController) {
             ClassicArtTopLevelNavigation(navController)
@@ -28,9 +28,9 @@ fun MainScreen() {
             modifier = Modifier,
             bottomBar = {
                 ClassicArtBottomBar(
-                        onNavigateToTopLevelDestination = classicArtTopLevelNavigation::navigateTo,
-                        currentDestination = currentDestination
-                    )
+                    onNavigateToTopLevelDestination = classicArtTopLevelNavigation::navigateTo,
+                    currentDestination = currentDestination
+                )
             }
         ) { padding ->
             Row(
@@ -38,7 +38,6 @@ fun MainScreen() {
                     .fillMaxSize()
 
             ) {
-
                 ClassicArtNavigationHost(
                     navController = navController,
                     modifier = Modifier
