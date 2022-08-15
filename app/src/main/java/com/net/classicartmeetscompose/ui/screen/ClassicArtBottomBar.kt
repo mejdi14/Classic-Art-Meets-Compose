@@ -11,7 +11,10 @@ import com.bk.core.navigation.TOP_LEVEL_DESTINATIONS
 import com.bk.core.navigation.TopLevelDestination
 
 @Composable
-fun ClassicArtBottomBar(onNavigateToTopLevelDestination: (TopLevelDestination) -> Unit, currentDestination: NavDestination?) {
+fun ClassicArtBottomBar(
+    onNavigateToTopLevelDestination: (TopLevelDestination) -> Unit,
+    currentDestination: NavDestination?
+) {
     Surface(color = Color(0xFFFFFFFF)) {
         BottomAppBar(
             elevation = 0.dp

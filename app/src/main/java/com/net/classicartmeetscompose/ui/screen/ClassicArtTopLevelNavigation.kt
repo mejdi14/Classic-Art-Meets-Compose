@@ -1,14 +1,17 @@
 package com.bk.core.navigation
 
+import android.graphics.drawable.Icon
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material.icons.outlined.Home
 import androidx.compose.material.icons.outlined.Menu
+import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.res.vectorResource
 import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.NavHostController
 import com.navigation.core.R
+import com.net.classicartmeetscompose.ui.screen.HomeIcon
 
 class ClassicArtTopLevelNavigation(private val navController: NavHostController) {
 
@@ -39,13 +42,13 @@ data class TopLevelDestination(
 val TOP_LEVEL_DESTINATIONS = listOf(
     TopLevelDestination(
         route = HomeDestination.route,
-        selectedIcon = Icons.Default.Home,
+        selectedIcon = HomeIcon ,
         unselectedIcon = Icons.Outlined.Home,
         iconTextId = R.string.home_label
     ),
     TopLevelDestination(
         route = GalleryDestination.route,
-        selectedIcon = Icons.Default.Menu,
+        selectedIcon =  HomeIcon ,
         unselectedIcon = Icons.Outlined.Menu,
         iconTextId = R.string.gallery
     )
