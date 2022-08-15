@@ -10,6 +10,5 @@ object GalleryDestination : ClassicArtNavigationDestination {
 
 fun NavGraphBuilder.galleryGraph() {
     composable(route = GalleryDestination.route) {
-
     }
 }
