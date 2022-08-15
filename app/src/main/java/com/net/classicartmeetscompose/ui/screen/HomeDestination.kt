@@ -1,8 +1,8 @@
-package com.bk.core.navigation
+package com.net.classicartmeetscompose.ui.screen
 
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
-import com.net.classicartmeetscompose.ui.screen.HomeRoute
+import com.bk.feature2.home.ui.HomeRoute
 
 object HomeDestination : ClassicArtNavigationDestination {
     override val route = "home_route"

@@ -1,4 +1,4 @@
-package com.bk.core.navigation
+package com.net.classicartmeetscompose.ui.screen
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
