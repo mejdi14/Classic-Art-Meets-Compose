@@ -7,7 +7,7 @@ import com.bk.core.data.ClassicArtDispatchers
 import com.bk.core.data.Dispatcher
 import com.bk.core.data.PlaceUiState
 import com.bk.core.data.repository.PlaceRepository
-import com.example.core.network.model.Place
+import com.net.core.network.model.Place
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.ExperimentalCoroutinesApi

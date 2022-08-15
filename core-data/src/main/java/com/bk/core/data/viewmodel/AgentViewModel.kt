@@ -2,7 +2,7 @@ package com.bk.core.data.viewmodel
 
 import androidx.lifecycle.ViewModel
 import com.bk.core.data.repository.AgentRepository
-import com.example.core.network.model.Agent
+import com.net.core.network.model.Agent
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 

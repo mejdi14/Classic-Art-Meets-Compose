@@ -2,8 +2,8 @@ package com.bk.core.data.repository
 
 import com.bk.core.data.ClassicArtDispatchers
 import com.bk.core.data.Dispatcher
-import com.example.core.network.ClassicArtNetwork
-import com.example.core.network.model.Place
+import com.net.core.network.ClassicArtNetwork
+import com.net.core.network.model.Place
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow

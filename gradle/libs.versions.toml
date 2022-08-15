@@ -32,8 +32,9 @@ junit-ext = "1.1.3"
 expresso-core = "3.4.0"
 
 # Compose
-compose-core = "1.1.1"
+compose-core = "1.3.0"
 compose-activity = "1.3.1"
+compose-ui = "1.2.1"
 
 # Room
 room-core = "2.3.0"
@@ -67,8 +68,8 @@ okhttp-logging = { group = "com.squareup.okhttp3", name = "logging-interceptor",
 junit-compiler = { module = "junit:junit", version.ref = "junit" }
 junit-ext = { module = "androidx.test.ext:junit", version.ref = "junit-ext" }
 expresso-compiler = { module = "androidx.test.espresso:espresso-core", version.ref = "expresso-core" }
-compose-test = { module = "androidx.compose.ui:ui-test-junit4", version.ref = "compose-core" }
-compose-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose-core" }
+compose-test = { module = "androidx.compose.ui:ui-test-junit4", version.ref = "compose-ui" }
+compose-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose-ui" }
 
 # Hilt
 hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
@@ -91,9 +92,9 @@ coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coil" }
 room-compiler = { module = "androidx.room:room-compiler", version.ref = "room-core" }
 
 # Compose
-compose-compiler = { module = "androidx.compose.ui:ui", version.ref = "compose-core" }
-compose-material = { module = "androidx.compose.material:material", version.ref = "compose-core" }
-compose-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose-core" }
+compose-compiler = { module = "androidx.compose.ui:ui", version.ref = "compose-uigu" }
+compose-material = { module = "androidx.compose.material:material", version.ref = "compose-ui" }
+compose-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose-ui" }
 
 # Google
 google-material = { module = "com.google.android.material:material", version.ref = "google-material" }
