@@ -1,4 +1,4 @@
-package com.net.classicartmeetscompose.ui.screen
+package com.bk.core.navigation
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Home

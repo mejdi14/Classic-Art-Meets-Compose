@@ -1,4 +1,4 @@
-package com.net.classicartmeetscompose.ui.screen
+package com.bk.core.navigation
 
 interface ClassicArtNavigationDestination {
     val route: String
