@@ -1,4 +1,4 @@
-package com.net.core.navigation
+package com.bk.core.navigation
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Home
@@ -8,7 +8,7 @@ import androidx.compose.material.icons.outlined.Menu
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.NavHostController
-import com.net.core.R
+import com.navigation.core.R
 
 class ClassicArtTopLevelNavigation(private val navController: NavHostController) {
 

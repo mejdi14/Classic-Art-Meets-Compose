@@ -1,4 +1,4 @@
-package com.net.core.navigation
+package com.bk.core.navigation
 
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable

@@ -1,4 +1,4 @@
-package com.net.core.navigation
+package com.bk.core.navigation
 
 interface ClassicArtNavigationDestination {
     val route: String

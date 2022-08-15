@@ -92,7 +92,7 @@ coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coil" }
 room-compiler = { module = "androidx.room:room-compiler", version.ref = "room-core" }
 
 # Compose
-compose-compiler = { module = "androidx.compose.ui:ui", version.ref = "compose-uigu" }
+compose-compiler = { module = "androidx.compose.ui:ui", version.ref = "compose-ui" }
 compose-material = { module = "androidx.compose.material:material", version.ref = "compose-ui" }
 compose-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose-ui" }
 
