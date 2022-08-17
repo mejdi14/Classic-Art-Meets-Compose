@@ -16,11 +16,22 @@ public val SelectedIcons.Microphone: ImageVector
         if (_microphone != null) {
             return _microphone!!
         }
-        _microphone = Builder(name = "Microphone", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF41416e)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _microphone = Builder(
+            name = "Microphone",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF41416e)),
+                stroke = null,
+                strokeLineWidth = 0.0f,
+                strokeLineCap = Butt,
+                strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(7.5f, 11.0f)
                 verticalLineTo(7.0f)
                 arcToRelative(4.5f, 4.5f, 0.0f, false, true, 9.0f, 0.0f)
@@ -43,7 +54,7 @@ public val SelectedIcons.Microphone: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _microphone!!
     }
 

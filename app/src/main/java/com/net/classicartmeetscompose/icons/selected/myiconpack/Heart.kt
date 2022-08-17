@@ -16,11 +16,22 @@ public val SelectedIcons.Heart: ImageVector
         if (_heart != null) {
             return _heart!!
         }
-        _heart = Builder(name = "Heart", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF41416e)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _heart = Builder(
+            name = "Heart",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF41416e)),
+                stroke = null,
+                strokeLineWidth = 0.0f,
+                strokeLineCap = Butt,
+                strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(21.37f, 11.562f)
                 curveToRelative(-0.955f, 4.9f, -5.974f, 8.334f, -8.088f, 9.586f)
                 arcToRelative(2.517f, 2.517f, 0.0f, false, true, -2.564f, 0.0f)
@@ -34,7 +45,7 @@ public val SelectedIcons.Heart: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _heart!!
     }
 

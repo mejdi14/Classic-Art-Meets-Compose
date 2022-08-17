@@ -16,11 +16,22 @@ public val SelectedIcons.Discount: ImageVector
         if (_discount != null) {
             return _discount!!
         }
-        _discount = Builder(name = "Discount", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF41416e)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _discount = Builder(
+            name = "Discount",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF41416e)),
+                stroke = null,
+                strokeLineWidth = 0.0f,
+                strokeLineCap = Butt,
+                strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(20.62f, 9.869f)
                 lineToRelative(-0.58f, -0.58f)
                 arcToRelative(1.5f, 1.5f, 0.0f, false, true, -0.44f, -1.06f)
@@ -73,7 +84,7 @@ public val SelectedIcons.Discount: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _discount!!
     }
 

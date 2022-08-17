@@ -16,11 +16,22 @@ public val SelectedIcons.Link: ImageVector
         if (_link != null) {
             return _link!!
         }
-        _link = Builder(name = "Link", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF41416e)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _link = Builder(
+            name = "Link",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF41416e)),
+                stroke = null,
+                strokeLineWidth = 0.0f,
+                strokeLineCap = Butt,
+                strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(20.545f, 10.467f)
                 lineToRelative(-1.839f, 1.84f)
                 arcToRelative(1.0f, 1.0f, 0.0f, false, true, -1.414f, -1.414f)
@@ -54,7 +65,7 @@ public val SelectedIcons.Link: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _link!!
     }
 

@@ -16,11 +16,22 @@ public val SelectedIcons.Comments: ImageVector
         if (_comments != null) {
             return _comments!!
         }
-        _comments = Builder(name = "Comments", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF41416e)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _comments = Builder(
+            name = "Comments",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF41416e)),
+                stroke = null,
+                strokeLineWidth = 0.0f,
+                strokeLineCap = Butt,
+                strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(21.5f, 11.0f)
                 lineTo(21.5f, 21.0f)
                 arcToRelative(0.489f, 0.489f, 0.0f, false, true, -0.31f, 0.46f)
@@ -49,7 +60,7 @@ public val SelectedIcons.Comments: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _comments!!
     }
 

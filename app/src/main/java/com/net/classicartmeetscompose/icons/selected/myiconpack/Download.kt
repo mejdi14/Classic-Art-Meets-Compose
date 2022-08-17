@@ -16,11 +16,22 @@ public val SelectedIcons.Download: ImageVector
         if (_download != null) {
             return _download!!
         }
-        _download = Builder(name = "Download", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF41416e)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _download = Builder(
+            name = "Download",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF41416e)),
+                stroke = null,
+                strokeLineWidth = 0.0f,
+                strokeLineCap = Butt,
+                strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(17.0f, 10.48f)
                 horizontalLineToRelative(-0.92f)
                 lineToRelative(-2.3f, 2.3f)
@@ -55,7 +66,7 @@ public val SelectedIcons.Download: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _download!!
     }
 

@@ -16,11 +16,22 @@ public val SelectedIcons.Lock: ImageVector
         if (_lock != null) {
             return _lock!!
         }
-        _lock = Builder(name = "Lock", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF41416e)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _lock = Builder(
+            name = "Lock",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF41416e)),
+                stroke = null,
+                strokeLineWidth = 0.0f,
+                strokeLineCap = Butt,
+                strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(17.0f, 9.99f)
                 lineTo(17.0f, 7.0f)
                 arcTo(5.0f, 5.0f, 0.0f, false, false, 7.0f, 7.0f)
@@ -45,7 +56,7 @@ public val SelectedIcons.Lock: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _lock!!
     }
 

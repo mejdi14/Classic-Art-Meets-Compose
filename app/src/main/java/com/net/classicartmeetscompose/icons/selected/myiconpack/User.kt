@@ -16,11 +16,22 @@ public val SelectedIcons.User: ImageVector
         if (_user != null) {
             return _user!!
         }
-        _user = Builder(name = "User", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF41416e)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _user = Builder(
+            name = "User",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF41416e)),
+                stroke = null,
+                strokeLineWidth = 0.0f,
+                strokeLineCap = Butt,
+                strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(7.0f, 7.5f)
                 arcToRelative(5.0f, 5.0f, 0.0f, true, true, 5.0f, 5.0f)
                 arcTo(5.006f, 5.006f, 0.0f, false, true, 7.0f, 7.5f)
@@ -41,7 +52,7 @@ public val SelectedIcons.User: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _user!!
     }
 

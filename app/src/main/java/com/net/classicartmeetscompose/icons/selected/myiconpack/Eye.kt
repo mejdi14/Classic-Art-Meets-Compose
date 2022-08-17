@@ -16,11 +16,23 @@ public val SelectedIcons.Eye: ImageVector
         if (_eye != null) {
             return _eye!!
         }
-        _eye = Builder(name = "Eye", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp, viewportWidth
-                = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF41416e)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _eye = Builder(
+            name = "Eye",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth =
+            24.0f,
+            viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF41416e)),
+                stroke = null,
+                strokeLineWidth = 0.0f,
+                strokeLineCap = Butt,
+                strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(21.014f, 10.24f)
                 curveToRelative(-1.29f, -2.14f, -4.17f, -5.74f, -9.02f, -5.74f)
                 reflectiveCurveToRelative(-7.73f, 3.6f, -9.01f, 5.74f)
@@ -43,7 +55,7 @@ public val SelectedIcons.Eye: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _eye!!
     }
 

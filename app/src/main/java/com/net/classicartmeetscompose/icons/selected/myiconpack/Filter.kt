@@ -16,11 +16,22 @@ public val SelectedIcons.Filter: ImageVector
         if (_filter != null) {
             return _filter!!
         }
-        _filter = Builder(name = "Filter", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF41416e)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _filter = Builder(
+            name = "Filter",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF41416e)),
+                stroke = null,
+                strokeLineWidth = 0.0f,
+                strokeLineCap = Butt,
+                strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(19.71f, 8.0f)
                 lineToRelative(-4.77f, 4.77f)
                 arcToRelative(1.5f, 1.5f, 0.0f, false, false, -0.44f, 1.06f)
@@ -44,7 +55,7 @@ public val SelectedIcons.Filter: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _filter!!
     }
 

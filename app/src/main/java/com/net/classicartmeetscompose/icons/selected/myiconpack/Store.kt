@@ -16,11 +16,22 @@ public val SelectedIcons.Store: ImageVector
         if (_store != null) {
             return _store!!
         }
-        _store = Builder(name = "Store", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF41416e)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _store = Builder(
+            name = "Store",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF41416e)),
+                stroke = null,
+                strokeLineWidth = 0.0f,
+                strokeLineCap = Butt,
+                strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(20.5f, 18.0f)
                 arcTo(3.5f, 3.5f, 0.0f, false, true, 17.0f, 21.5f)
                 lineTo(14.53f, 21.5f)
@@ -52,7 +63,7 @@ public val SelectedIcons.Store: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _store!!
     }
 

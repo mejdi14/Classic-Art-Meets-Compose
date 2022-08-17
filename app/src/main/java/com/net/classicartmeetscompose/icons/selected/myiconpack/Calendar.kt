@@ -16,11 +16,22 @@ public val SelectedIcons.Calendar: ImageVector
         if (_calendar != null) {
             return _calendar!!
         }
-        _calendar = Builder(name = "Calendar", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF41416e)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _calendar = Builder(
+            name = "Calendar",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF41416e)),
+                stroke = null,
+                strokeLineWidth = 0.0f,
+                strokeLineCap = Butt,
+                strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(21.5f, 7.94f)
                 arcTo(4.766f, 4.766f, 0.0f, false, false, 17.0f, 3.2f)
                 lineTo(17.0f, 3.0f)
@@ -79,7 +90,7 @@ public val SelectedIcons.Calendar: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _calendar!!
     }
 

@@ -16,11 +16,22 @@ public val SelectedIcons.Copy: ImageVector
         if (_copy != null) {
             return _copy!!
         }
-        _copy = Builder(name = "Copy", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF41416e)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _copy = Builder(
+            name = "Copy",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF41416e)),
+                stroke = null,
+                strokeLineWidth = 0.0f,
+                strokeLineCap = Butt,
+                strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(11.0f, 19.5f)
                 horizontalLineToRelative(5.7f)
                 arcTo(3.978f, 3.978f, 0.0f, false, true, 13.0f, 22.0f)
@@ -52,7 +63,7 @@ public val SelectedIcons.Copy: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _copy!!
     }
 

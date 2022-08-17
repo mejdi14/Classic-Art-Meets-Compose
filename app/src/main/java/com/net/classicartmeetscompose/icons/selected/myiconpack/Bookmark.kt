@@ -16,11 +16,22 @@ public val SelectedIcons.Bookmark: ImageVector
         if (_bookmark != null) {
             return _bookmark!!
         }
-        _bookmark = Builder(name = "Bookmark", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF41416e)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _bookmark = Builder(
+            name = "Bookmark",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF41416e)),
+                stroke = null,
+                strokeLineWidth = 0.0f,
+                strokeLineCap = Butt,
+                strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(19.5f, 7.0f)
                 verticalLineTo(20.0f)
                 arcToRelative(1.5f, 1.5f, 0.0f, false, true, -2.354f, 1.233f)
@@ -35,7 +46,7 @@ public val SelectedIcons.Bookmark: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _bookmark!!
     }
 

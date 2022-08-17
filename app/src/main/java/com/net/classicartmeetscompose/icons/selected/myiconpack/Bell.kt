@@ -16,11 +16,22 @@ public val SelectedIcons.Bell: ImageVector
         if (_bell != null) {
             return _bell!!
         }
-        _bell = Builder(name = "Bell", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF41416e)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _bell = Builder(
+            name = "Bell",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF41416e)),
+                stroke = null,
+                strokeLineWidth = 0.0f,
+                strokeLineCap = Butt,
+                strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(10.0f, 20.0f)
                 horizontalLineToRelative(4.0f)
                 arcToRelative(2.0f, 2.0f, 0.0f, false, true, -4.0f, 0.0f)
@@ -39,7 +50,7 @@ public val SelectedIcons.Bell: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _bell!!
     }
 

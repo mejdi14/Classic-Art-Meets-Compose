@@ -16,11 +16,22 @@ public val SelectedIcons.Upload: ImageVector
         if (_upload != null) {
             return _upload!!
         }
-        _upload = Builder(name = "Upload", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF41416e)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _upload = Builder(
+            name = "Upload",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF41416e)),
+                stroke = null,
+                strokeLineWidth = 0.0f,
+                strokeLineCap = Butt,
+                strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(17.0f, 10.48f)
                 lineTo(14.52f, 10.48f)
                 verticalLineToRelative(0.53f)
@@ -54,7 +65,7 @@ public val SelectedIcons.Upload: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _upload!!
     }
 

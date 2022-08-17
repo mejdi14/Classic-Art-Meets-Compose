@@ -16,11 +16,22 @@ public val SelectedIcons.Thumbtack: ImageVector
         if (_thumbtack != null) {
             return _thumbtack!!
         }
-        _thumbtack = Builder(name = "Thumbtack", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF41416e)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _thumbtack = Builder(
+            name = "Thumbtack",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF41416e)),
+                stroke = null,
+                strokeLineWidth = 0.0f,
+                strokeLineCap = Butt,
+                strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(19.5f, 15.0f)
                 arcToRelative(0.5f, 0.5f, 0.0f, false, true, -0.5f, 0.5f)
                 horizontalLineTo(13.0f)
@@ -43,7 +54,7 @@ public val SelectedIcons.Thumbtack: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _thumbtack!!
     }
 

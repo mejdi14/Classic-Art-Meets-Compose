@@ -16,11 +16,22 @@ public val SelectedIcons.Settings: ImageVector
         if (_settings != null) {
             return _settings!!
         }
-        _settings = Builder(name = "Settings", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF41416d)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _settings = Builder(
+            name = "Settings",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF41416d)),
+                stroke = null,
+                strokeLineWidth = 0.0f,
+                strokeLineCap = Butt,
+                strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(20.33f, 9.78f)
                 horizontalLineTo(20.3f)
                 arcToRelative(1.207f, 1.207f, 0.0f, false, true, -1.11f, -0.75f)
@@ -86,7 +97,7 @@ public val SelectedIcons.Settings: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _settings!!
     }
 

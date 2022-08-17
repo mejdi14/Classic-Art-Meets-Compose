@@ -16,11 +16,23 @@ public val SelectedIcons.Tag: ImageVector
         if (_tag != null) {
             return _tag!!
         }
-        _tag = Builder(name = "Tag", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp, viewportWidth
-                = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF41416e)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _tag = Builder(
+            name = "Tag",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth =
+            24.0f,
+            viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF41416e)),
+                stroke = null,
+                strokeLineWidth = 0.0f,
+                strokeLineCap = Butt,
+                strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(20.18f, 10.35f)
                 lineTo(13.65f, 3.82f)
                 arcTo(4.531f, 4.531f, 0.0f, false, false, 10.47f, 2.5f)
@@ -39,7 +51,7 @@ public val SelectedIcons.Tag: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _tag!!
     }
 

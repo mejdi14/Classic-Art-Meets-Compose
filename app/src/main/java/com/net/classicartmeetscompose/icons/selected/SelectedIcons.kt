@@ -21,7 +21,7 @@ public val SelectedIcons.AllIcons: ____KtList<ImageVector>
             Heart, Home, Image, Inbox, Link, Lock, Map, Menu, Microphone, Mobile,
             Package, Paperclip, Pen, Phone, Search, Send, Settings, Shield,
             Star, Stopwatch, Store, Tablet, Tag, Thumbtack,
-            Trash, Unlock, Upload, User, Users, Video,
+            Trash, Unlock, Upload, User, Users, Video
         )
         return __AllIcons!!
     }
