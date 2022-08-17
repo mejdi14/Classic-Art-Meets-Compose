@@ -42,39 +42,11 @@ class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        runBlocking {
-            launch {
-                /*  val list = placeViewModel.getAllPlaces()
-                  Log.d("TAG", "onCreate: $list")*/
-            }
-        }
         setContent {
-            /*ClassicArtComposeTheme {
-                Box(
-                    modifier = Modifier.fillMaxSize().background(color = Color(0xFFf7f9f5))
-                )
-                SimpleCoilImage(this)
-            }*/
             MainScreen()
         }
     }
 
-    @OptIn(ExperimentalCoroutinesApi::class)
-    @Composable
-    private fun HomeScreen(viewModel: PlaceViewModel = hiltViewModel()) {
-        val placesUiState by viewModel.placesUiState.collectAsState()
-        LazyColumn(modifier = Modifier.fillMaxHeight()) {
-            items(
-                items = if (placesUiState is DataUiState.Success<*>) {
-                    @Suppress("UNCHECKED_CAST")
-                    (placesUiState as DataUiState.Success<Place>).feed.data
-                } else arrayListOf(),
-                itemContent = { item ->
-                    Text(text = item.title.toString())
-                }
-            )
-        }
-    }
 }
 
 @Composable
