@@ -2,18 +2,18 @@ package com.bk.core.data
 
 import com.net.core.network.model.Place
 
-sealed interface PlaceUiState {
+sealed interface DataUiState {
     /**
      * The feed is still loading.
      */
-    object Loading : PlaceUiState
+    object Loading : DataUiState
 
-    object Error : PlaceUiState
+    object Error : DataUiState
 
     /**
      * The feed is loaded with the given list of news resources.
      */
-    data class Success(
-        val feed: Place
-    ) : PlaceUiState
+    data class Success<T>(
+        val feed: T
+    ) : DataUiState
 }

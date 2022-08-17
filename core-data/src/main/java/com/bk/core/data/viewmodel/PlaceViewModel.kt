@@ -5,7 +5,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.bk.core.data.ClassicArtDispatchers
 import com.bk.core.data.Dispatcher
-import com.bk.core.data.PlaceUiState
+import com.bk.core.data.DataUiState
 import com.bk.core.data.repository.PlaceRepository
 import com.net.core.network.model.Place
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -26,19 +26,19 @@ class PlaceViewModel @Inject constructor(
     }
 
     @ExperimentalCoroutinesApi
-    val placesUiState: StateFlow<PlaceUiState> =
+    val placesUiState: StateFlow<DataUiState> =
         placeRepository.getPlacesStream()
             .flatMapLatest {
                 if (it.isSuccess) {
                     Log.d("TAG", "success: ${it.getOrNull()}")
-                    flowOf(PlaceUiState.Success(it.getOrThrow()))
+                    flowOf(DataUiState.Success(it.getOrThrow()))
                 } else {
-                    flowOf(PlaceUiState.Error)
+                    flowOf(DataUiState.Error)
                 }
             }
             .stateIn(
                 scope = viewModelScope,
                 started = SharingStarted.WhileSubscribed(5_000),
-                initialValue = PlaceUiState.Loading
+                initialValue = DataUiState.Loading
             )
 }

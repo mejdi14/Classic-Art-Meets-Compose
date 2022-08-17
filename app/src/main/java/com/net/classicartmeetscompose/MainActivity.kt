@@ -27,11 +27,13 @@ import coil.decode.GifDecoder
 import coil.decode.ImageDecoderDecoder
 import coil.request.ImageRequest
 import coil.size.Size
-import com.bk.core.data.PlaceUiState
+import com.bk.core.data.DataUiState
 import com.bk.core.data.viewmodel.PlaceViewModel
 import com.net.classicartmeetscompose.ui.screen.MainScreen
 import com.net.classicartmeetscompose.ui.theme.ClassicArtComposeTheme
+import com.net.core.network.model.Place
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 
@@ -57,14 +59,16 @@ class MainActivity : ComponentActivity() {
         }
     }
 
+    @OptIn(ExperimentalCoroutinesApi::class)
     @Composable
     private fun HomeScreen(viewModel: PlaceViewModel = hiltViewModel()) {
         val placesUiState by viewModel.placesUiState.collectAsState()
         Log.d("TAG", "HomeScreen: $placesUiState")
         LazyColumn(modifier = Modifier.fillMaxHeight()) {
             items(
-                items = if (placesUiState is PlaceUiState.Success) {
-                    (placesUiState as PlaceUiState.Success).feed.data
+                items = if (placesUiState is DataUiState.Success<*>) {
+                    @Suppress("UNCHECKED_CAST")
+                    (placesUiState as DataUiState.Success<Place>).feed.data
                 } else arrayListOf(),
                 itemContent = { item ->
                     Log.d("TAG", "HomeScreenitem: $item")
