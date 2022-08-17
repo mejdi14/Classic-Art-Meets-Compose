@@ -5,8 +5,12 @@ import androidx.compose.material.icons.outlined.Menu
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.NavHostController
+import com.net.classicartmeetscompose.icons.selected.SelectedIcons
+import com.net.classicartmeetscompose.icons.selected.myiconpack.Home
+import com.net.classicartmeetscompose.icons.selected.myiconpack.Image
 import com.net.classicartmeetscompose.icons.unselected.UnselectedIcons
 import com.net.classicartmeetscompose.icons.unselected.myiconpack.Home
+import com.net.classicartmeetscompose.icons.unselected.myiconpack.Image
 import com.net.classicartmeetscompose.ui.screen.HomeIcon
 
 class ClassicArtTopLevelNavigation(private val navController: NavHostController) {
@@ -31,12 +35,12 @@ data class TopLevelDestination(
 val TOP_LEVEL_DESTINATIONS = listOf(
     TopLevelDestination(
         route = HomeDestination.route,
-        selectedIcon = HomeIcon,
+        selectedIcon = SelectedIcons.Home,
         unselectedIcon = UnselectedIcons.Home
     ),
     TopLevelDestination(
         route = GalleryDestination.route,
-        selectedIcon = HomeIcon,
-        unselectedIcon = Icons.Outlined.Menu
+        selectedIcon = SelectedIcons.Image,
+        unselectedIcon = UnselectedIcons.Image
     )
 )
