@@ -1,0 +1,56 @@
+package com.net.classicartmeetscompose.unselected.icons.myiconpack
+
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
+import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
+import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.vector.ImageVector.Builder
+import androidx.compose.ui.graphics.vector.path
+import androidx.compose.ui.unit.dp
+import com.net.classicartmeetscompose.unselected.icons.MyIconPack
+
+public val MyIconPack.`Comment-dots`: ImageVector
+    get() {
+        if (`_comment-dots` != null) {
+            return `_comment-dots`!!
+        }
+        `_comment-dots` = Builder(name = "Comment-dots", defaultWidth = 24.0.dp, defaultHeight =
+                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
+            path(fill = SolidColor(Color(0xFF41416e)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero) {
+                moveTo(17.0f, 3.5f)
+                lineTo(7.0f, 3.5f)
+                arcTo(4.507f, 4.507f, 0.0f, false, false, 2.5f, 8.0f)
+                lineTo(2.5f, 21.0f)
+                arcToRelative(0.5f, 0.5f, 0.0f, false, false, 0.31f, 0.46f)
+                arcTo(0.433f, 0.433f, 0.0f, false, false, 3.0f, 21.5f)
+                arcToRelative(0.469f, 0.469f, 0.0f, false, false, 0.35f, -0.15f)
+                lineToRelative(2.42f, -2.41f)
+                arcToRelative(1.5f, 1.5f, 0.0f, false, true, 1.06f, -0.44f)
+                lineTo(17.0f, 18.5f)
+                arcTo(4.507f, 4.507f, 0.0f, false, false, 21.5f, 14.0f)
+                lineTo(21.5f, 8.0f)
+                arcTo(4.507f, 4.507f, 0.0f, false, false, 17.0f, 3.5f)
+                close()
+                moveTo(8.0f, 12.25f)
+                arcTo(1.25f, 1.25f, 0.0f, true, true, 9.25f, 11.0f)
+                arcTo(1.25f, 1.25f, 0.0f, false, true, 8.0f, 12.25f)
+                close()
+                moveTo(12.0f, 12.25f)
+                arcTo(1.25f, 1.25f, 0.0f, true, true, 13.25f, 11.0f)
+                arcTo(1.25f, 1.25f, 0.0f, false, true, 12.0f, 12.25f)
+                close()
+                moveTo(16.0f, 12.25f)
+                arcTo(1.25f, 1.25f, 0.0f, true, true, 17.25f, 11.0f)
+                arcTo(1.25f, 1.25f, 0.0f, false, true, 16.0f, 12.25f)
+                close()
+            }
+        }
+        .build()
+        return `_comment-dots`!!
+    }
+
+private var `_comment-dots`: ImageVector? = null
