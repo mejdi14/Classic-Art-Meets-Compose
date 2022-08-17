@@ -1,5 +1,6 @@
 package com.bk.feature2.home.ui.components
 
+import android.util.Log
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -11,19 +12,23 @@ import androidx.compose.ui.unit.dp
 import coil.compose.rememberAsyncImagePainter
 import coil.request.ImageRequest
 import coil.size.Size
+import com.net.core.network.model.Config
 import com.net.core.network.model.Data
 
 @Composable
-fun HomeScreenImage(item: Data) {
+fun HomeScreenImage(item: Data, config: Config?) {
     Image(
         painter = rememberAsyncImagePainter(
             ImageRequest.Builder(LocalContext.current)
-                .data(data = "hello")
+                .data(data = config?.iiifUrl + item.imageId)
                 .apply(block = {
                     size(size = Size.ORIGINAL)
                 }).build()
         ),
         contentDescription = null,
-        modifier = Modifier.fillMaxWidth().height(200.dp).padding(50.dp)
+        modifier = Modifier
+            .fillMaxWidth()
+            .height(200.dp)
+            .padding(50.dp)
     )
 }

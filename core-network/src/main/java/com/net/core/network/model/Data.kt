@@ -1,6 +1,7 @@
 package com.net.core.network.model
 
 import SuggestAutocompleteAll
+import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
@@ -42,10 +43,10 @@ data class Data(
     var hasEducationalResources: Boolean? = null,
     var colorfulness: Double? = null,
     var color: Color? = Color(),
-    var latitude: String? = null,
+    /*var latitude: String? = null,
     var longitude: String? = null,
     var latlon: String? = null,
-    var isOnView: Boolean? = null,
+    var isOnView: Boolean? = null,*/
     var onLoanDisplay: String? = null,
     var galleryTitle: String? = null,
     var galleryId: String? = null,
@@ -85,7 +86,7 @@ data class Data(
     var techniqueIds: ArrayList<String> = arrayListOf(),
     var techniqueTitles: ArrayList<String> = arrayListOf(),
     var themeTitles: ArrayList<String> = arrayListOf(),
-    var imageId: String? = null,
+    @SerialName("image_id") var imageId: String? = null,
     var altImageIds: ArrayList<String> = arrayListOf(),
     var documentIds: ArrayList<String> = arrayListOf(),
     var soundIds: ArrayList<String> = arrayListOf(),
