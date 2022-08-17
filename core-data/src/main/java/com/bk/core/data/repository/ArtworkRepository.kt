@@ -1,14 +1,8 @@
 package com.bk.core.data.repository
 
-import com.net.core.network.ClassicArtNetwork
 import com.net.core.network.model.Artwork
-import javax.inject.Inject
+import kotlinx.coroutines.flow.Flow
 
-class ArtworkRepository @Inject constructor(
-    private val network: ClassicArtNetwork
-) {
-
-    suspend fun getAllArtworks(): Artwork {
-        return network.getArtwork()
-    }
+interface ArtworkRepository {
+    fun getArtworkStream(): Flow<Result<Artwork>>
 }

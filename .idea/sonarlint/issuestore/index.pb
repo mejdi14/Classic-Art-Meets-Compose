@@ -23,8 +23,6 @@ t
 Dcore-data/src/main/java/com/bk/core/data/viewmodel/AgentViewModel.kt,7\e\7ef5dbb2cae6e1d4785e8af8e5b6e678a1b94924
 p
 @core-data/src/main/java/com/bk/core/data/ClassicArtDispatcher.kt,a\1\a1534ba92c4c4842a0103cc27ac608c2cda309ac
-v
-Fcore-data/src/main/java/com/bk/core/data/viewmodel/ArtworkViewModel.kt,5\1\51326acccc0eccf52c4ba3a25682689d5e84268f
 t
 Dcore-data/src/main/java/com/bk/core/data/viewmodel/PlaceViewModel.kt,9\9\9960e27c9b38ada768452d135b7bf9435e957da4
 P
