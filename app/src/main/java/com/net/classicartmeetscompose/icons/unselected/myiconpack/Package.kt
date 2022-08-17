@@ -16,11 +16,22 @@ public val UnselectedIcons.Package: ImageVector
         if (_package != null) {
             return _package!!
         }
-        _package = Builder(name = "Package", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF41416e)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _package = Builder(
+            name = "Package",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF41416e)),
+                stroke = null,
+                strokeLineWidth = 0.0f,
+                strokeLineCap = Butt,
+                strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(18.715f, 4.938f)
                 lineToRelative(-4.4f, -1.953f)
                 arcToRelative(5.786f, 5.786f, 0.0f, false, false, -4.632f, 0.0f)
@@ -73,7 +84,7 @@ public val UnselectedIcons.Package: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _package!!
     }
 

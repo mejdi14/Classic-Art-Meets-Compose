@@ -16,11 +16,22 @@ public val UnselectedIcons.File: ImageVector
         if (_file != null) {
             return _file!!
         }
-        _file = Builder(name = "File", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF41416e)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _file = Builder(
+            name = "File",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF41416e)),
+                stroke = null,
+                strokeLineWidth = 0.0f,
+                strokeLineCap = Butt,
+                strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(19.061f, 7.354f)
                 lineTo(14.646f, 2.939f)
                 arcToRelative(1.49f, 1.49f, 0.0f, false, false, -1.06f, -0.439f)
@@ -52,7 +63,7 @@ public val UnselectedIcons.File: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _file!!
     }
 

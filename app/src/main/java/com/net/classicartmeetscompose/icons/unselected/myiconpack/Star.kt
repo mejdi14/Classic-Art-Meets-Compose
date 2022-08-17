@@ -16,11 +16,22 @@ public val UnselectedIcons.Star: ImageVector
         if (_star != null) {
             return _star!!
         }
-        _star = Builder(name = "Star", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF41416e)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _star = Builder(
+            name = "Star",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF41416e)),
+                stroke = null,
+                strokeLineWidth = 0.0f,
+                strokeLineCap = Butt,
+                strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(21.411f, 10.25f)
                 arcTo(1.844f, 1.844f, 0.0f, false, false, 19.9f, 8.986f)
                 lineToRelative(-4.309f, -0.617f)
@@ -72,7 +83,7 @@ public val UnselectedIcons.Star: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _star!!
     }
 

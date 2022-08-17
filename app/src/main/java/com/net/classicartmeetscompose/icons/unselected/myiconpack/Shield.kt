@@ -16,11 +16,22 @@ public val UnselectedIcons.Shield: ImageVector
         if (_shield != null) {
             return _shield!!
         }
-        _shield = Builder(name = "Shield", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF41416e)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _shield = Builder(
+            name = "Shield",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF41416e)),
+                stroke = null,
+                strokeLineWidth = 0.0f,
+                strokeLineCap = Butt,
+                strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(20.158f, 6.526f)
                 curveTo(17.232f, 5.55f, 13.3f, 3.594f, 12.372f, 2.649f)
                 arcTo(0.5f, 0.5f, 0.0f, false, false, 12.02f, 2.5f)
@@ -40,7 +51,7 @@ public val UnselectedIcons.Shield: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _shield!!
     }
 

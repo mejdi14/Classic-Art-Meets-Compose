@@ -16,11 +16,23 @@ public val UnselectedIcons.Map: ImageVector
         if (_map != null) {
             return _map!!
         }
-        _map = Builder(name = "Map", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp, viewportWidth
-                = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF41416e)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _map = Builder(
+            name = "Map",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth =
+            24.0f,
+            viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF41416e)),
+                stroke = null,
+                strokeLineWidth = 0.0f,
+                strokeLineCap = Butt,
+                strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(20.283f, 3.888f)
                 arcTo(2.446f, 2.446f, 0.0f, false, false, 17.877f, 3.8f)
                 lineTo(15.666f, 4.934f)
@@ -79,7 +91,7 @@ public val UnselectedIcons.Map: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _map!!
     }
 

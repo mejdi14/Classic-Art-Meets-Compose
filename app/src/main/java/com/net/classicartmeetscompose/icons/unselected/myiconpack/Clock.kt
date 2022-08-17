@@ -16,11 +16,22 @@ public val UnselectedIcons.Clock: ImageVector
         if (_clock != null) {
             return _clock!!
         }
-        _clock = Builder(name = "Clock", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF41416e)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _clock = Builder(
+            name = "Clock",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF41416e)),
+                stroke = null,
+                strokeLineWidth = 0.0f,
+                strokeLineCap = Butt,
+                strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 2.5f)
                 arcTo(9.5f, 9.5f, 0.0f, true, false, 21.5f, 12.0f)
                 arcTo(9.511f, 9.511f, 0.0f, false, false, 12.0f, 2.5f)
@@ -41,7 +52,7 @@ public val UnselectedIcons.Clock: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _clock!!
     }
 

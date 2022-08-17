@@ -16,11 +16,22 @@ public val UnselectedIcons.Stopwatch: ImageVector
         if (_stopwatch != null) {
             return _stopwatch!!
         }
-        _stopwatch = Builder(name = "Stopwatch", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF41416e)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _stopwatch = Builder(
+            name = "Stopwatch",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF41416e)),
+                stroke = null,
+                strokeLineWidth = 0.0f,
+                strokeLineCap = Butt,
+                strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(17.734f, 7.933f)
                 arcToRelative(0.493f, 0.493f, 0.0f, false, false, 0.12f, -0.08f)
                 lineToRelative(1.5f, -1.5f)
@@ -51,7 +62,7 @@ public val UnselectedIcons.Stopwatch: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _stopwatch!!
     }
 

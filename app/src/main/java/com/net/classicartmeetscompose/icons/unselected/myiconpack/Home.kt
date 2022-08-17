@@ -16,11 +16,22 @@ public val UnselectedIcons.Home: ImageVector
         if (_home != null) {
             return _home!!
         }
-        _home = Builder(name = "Home", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF41416e)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _home = Builder(
+            name = "Home",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF41416e)),
+                stroke = null,
+                strokeLineWidth = 0.0f,
+                strokeLineCap = Butt,
+                strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(19.822f, 7.509f)
                 lineToRelative(-5.0f, -4.02f)
                 arcToRelative(4.533f, 4.533f, 0.0f, false, false, -5.643f, 0.0f)
@@ -54,7 +65,7 @@ public val UnselectedIcons.Home: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _home!!
     }
 

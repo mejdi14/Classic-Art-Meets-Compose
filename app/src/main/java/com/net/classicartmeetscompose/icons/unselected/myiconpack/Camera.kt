@@ -16,11 +16,22 @@ public val UnselectedIcons.Camera: ImageVector
         if (_camera != null) {
             return _camera!!
         }
-        _camera = Builder(name = "Camera", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF41416e)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _camera = Builder(
+            name = "Camera",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF41416e)),
+                stroke = null,
+                strokeLineWidth = 0.0f,
+                strokeLineCap = Butt,
+                strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(17.273f, 6.508f)
                 lineTo(16.01f, 4.613f)
                 arcTo(2.5f, 2.5f, 0.0f, false, false, 13.93f, 3.5f)
@@ -64,7 +75,7 @@ public val UnselectedIcons.Camera: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _camera!!
     }
 

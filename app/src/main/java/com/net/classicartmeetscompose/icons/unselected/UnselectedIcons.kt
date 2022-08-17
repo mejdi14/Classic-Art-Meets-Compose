@@ -64,7 +64,7 @@ public val UnselectedIcons.AllIcons: ____KtList<ImageVector>
             Upload,
             User,
             Users,
-            Video,
+            Video
         )
         return allIcons!!
     }

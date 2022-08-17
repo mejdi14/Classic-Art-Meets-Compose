@@ -16,11 +16,22 @@ public val UnselectedIcons.Compass: ImageVector
         if (_compass != null) {
             return _compass!!
         }
-        _compass = Builder(name = "Compass", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF41416e)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _compass = Builder(
+            name = "Compass",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF41416e)),
+                stroke = null,
+                strokeLineWidth = 0.0f,
+                strokeLineCap = Butt,
+                strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 2.5f)
                 arcTo(9.5f, 9.5f, 0.0f, true, false, 21.5f, 12.0f)
                 arcTo(9.511f, 9.511f, 0.0f, false, false, 12.0f, 2.5f)
@@ -56,7 +67,7 @@ public val UnselectedIcons.Compass: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _compass!!
     }
 

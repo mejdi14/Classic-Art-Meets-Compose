@@ -16,11 +16,23 @@ public val UnselectedIcons.Pen: ImageVector
         if (_pen != null) {
             return _pen!!
         }
-        _pen = Builder(name = "Pen", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp, viewportWidth
-                = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF41416e)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _pen = Builder(
+            name = "Pen",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth =
+            24.0f,
+            viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF41416e)),
+                stroke = null,
+                strokeLineWidth = 0.0f,
+                strokeLineCap = Butt,
+                strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(20.305f, 3.7f)
                 arcToRelative(4.08f, 4.08f, 0.0f, false, false, -5.77f, 0.0f)
                 lineTo(4.0f, 14.228f)
@@ -48,7 +60,7 @@ public val UnselectedIcons.Pen: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _pen!!
     }
 

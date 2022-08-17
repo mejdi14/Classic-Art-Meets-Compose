@@ -16,11 +16,22 @@ public val UnselectedIcons.Unlock: ImageVector
         if (_unlock != null) {
             return _unlock!!
         }
-        _unlock = Builder(name = "Unlock", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF41416e)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _unlock = Builder(
+            name = "Unlock",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF41416e)),
+                stroke = null,
+                strokeLineWidth = 0.0f,
+                strokeLineCap = Butt,
+                strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(15.0f, 9.5f)
                 lineTo(9.0f, 9.5f)
                 arcToRelative(4.576f, 4.576f, 0.0f, false, false, -0.5f, 0.05f)
@@ -56,7 +67,7 @@ public val UnselectedIcons.Unlock: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _unlock!!
     }
 

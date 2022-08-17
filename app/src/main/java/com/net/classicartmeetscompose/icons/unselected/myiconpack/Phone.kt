@@ -16,11 +16,22 @@ public val UnselectedIcons.Phone: ImageVector
         if (_phone != null) {
             return _phone!!
         }
-        _phone = Builder(name = "Phone", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF41416e)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _phone = Builder(
+            name = "Phone",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF41416e)),
+                stroke = null,
+                strokeLineWidth = 0.0f,
+                strokeLineCap = Butt,
+                strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(21.44f, 16.643f)
                 arcToRelative(3.288f, 3.288f, 0.0f, false, false, -0.075f, -0.333f)
                 arcToRelative(1.471f, 1.471f, 0.0f, false, false, -1.186f, -1.033f)
@@ -65,7 +76,7 @@ public val UnselectedIcons.Phone: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _phone!!
     }
 

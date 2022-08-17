@@ -16,11 +16,22 @@ public val UnselectedIcons.Video: ImageVector
         if (_video != null) {
             return _video!!
         }
-        _video = Builder(name = "Video", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF41416e)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _video = Builder(
+            name = "Video",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF41416e)),
+                stroke = null,
+                strokeLineWidth = 0.0f,
+                strokeLineCap = Butt,
+                strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(20.6f, 7.74f)
                 arcToRelative(1.7f, 1.7f, 0.0f, false, false, -1.745f, 0.082f)
                 lineTo(15.5f, 10.055f)
@@ -56,7 +67,7 @@ public val UnselectedIcons.Video: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _video!!
     }
 

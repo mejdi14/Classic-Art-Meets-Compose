@@ -16,11 +16,22 @@ public val UnselectedIcons.Search: ImageVector
         if (_search != null) {
             return _search!!
         }
-        _search = Builder(name = "Search", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF41416e)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _search = Builder(
+            name = "Search",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF41416e)),
+                stroke = null,
+                strokeLineWidth = 0.0f,
+                strokeLineCap = Butt,
+                strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(21.354f, 20.646f)
                 lineToRelative(-4.863f, -4.862f)
                 arcToRelative(8.029f, 8.029f, 0.0f, true, false, -0.707f, 0.707f)
@@ -33,7 +44,7 @@ public val UnselectedIcons.Search: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _search!!
     }
 

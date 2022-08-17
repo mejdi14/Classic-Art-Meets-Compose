@@ -9,18 +9,28 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
-import com.net.classicartmeetscompose.unselected.icons.MyIconPack
 
-public val MyIconPack.Globe: ImageVector
+public val Globe: ImageVector
     get() {
         if (_globe != null) {
             return _globe!!
         }
-        _globe = Builder(name = "Globe", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF41416e)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _globe = Builder(
+            name = "Globe",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF41416e)),
+                stroke = null,
+                strokeLineWidth = 0.0f,
+                strokeLineCap = Butt,
+                strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(21.424f, 8.669f)
                 arcTo(9.936f, 9.936f, 0.0f, false, false, 13.431f, 2.1f)
                 arcToRelative(10.322f, 10.322f, 0.0f, false, false, -2.863f, 0.0f)
@@ -87,7 +97,7 @@ public val MyIconPack.Globe: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _globe!!
     }
 

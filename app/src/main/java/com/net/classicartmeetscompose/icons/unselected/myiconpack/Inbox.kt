@@ -16,11 +16,22 @@ public val UnselectedIcons.Inbox: ImageVector
         if (_inbox != null) {
             return _inbox!!
         }
-        _inbox = Builder(name = "Inbox", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF41416e)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _inbox = Builder(
+            name = "Inbox",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF41416e)),
+                stroke = null,
+                strokeLineWidth = 0.0f,
+                strokeLineCap = Butt,
+                strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(7.5f, 10.0f)
                 arcTo(0.5f, 0.5f, 0.0f, false, true, 8.0f, 9.5f)
                 horizontalLineToRelative(8.0f)
@@ -71,7 +82,7 @@ public val UnselectedIcons.Inbox: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _inbox!!
     }
 

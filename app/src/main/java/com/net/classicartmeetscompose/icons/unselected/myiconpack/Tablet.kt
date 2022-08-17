@@ -16,11 +16,22 @@ public val UnselectedIcons.Tablet: ImageVector
         if (_tablet != null) {
             return _tablet!!
         }
-        _tablet = Builder(name = "Tablet", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF41416e)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _tablet = Builder(
+            name = "Tablet",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF41416e)),
+                stroke = null,
+                strokeLineWidth = 0.0f,
+                strokeLineCap = Butt,
+                strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(13.5f, 18.0f)
                 arcToRelative(0.5f, 0.5f, 0.0f, false, true, -0.5f, 0.5f)
                 lineTo(11.0f, 18.5f)
@@ -49,7 +60,7 @@ public val UnselectedIcons.Tablet: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _tablet!!
     }
 

@@ -16,11 +16,22 @@ public val UnselectedIcons.Headphones: ImageVector
         if (_headphones != null) {
             return _headphones!!
         }
-        _headphones = Builder(name = "Headphones", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF41416e)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _headphones = Builder(
+            name = "Headphones",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF41416e)),
+                stroke = null,
+                strokeLineWidth = 0.0f,
+                strokeLineCap = Butt,
+                strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(16.5f, 13.5f)
                 arcToRelative(2.0f, 2.0f, 0.0f, false, false, -2.0f, 2.0f)
                 verticalLineToRelative(4.0f)
@@ -57,7 +68,7 @@ public val UnselectedIcons.Headphones: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _headphones!!
     }
 

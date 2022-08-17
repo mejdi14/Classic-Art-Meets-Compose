@@ -16,11 +16,22 @@ public val UnselectedIcons.Send: ImageVector
         if (_send != null) {
             return _send!!
         }
-        _send = Builder(name = "Send", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF41416e)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _send = Builder(
+            name = "Send",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF41416e)),
+                stroke = null,
+                strokeLineWidth = 0.0f,
+                strokeLineCap = Butt,
+                strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(20.75f, 3.249f)
                 arcToRelative(2.535f, 2.535f, 0.0f, false, false, -2.425f, -0.671f)
                 lineTo(5.212f, 5.856f)
@@ -51,7 +62,7 @@ public val UnselectedIcons.Send: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _send!!
     }
 

@@ -16,11 +16,22 @@ public val UnselectedIcons.Bell: ImageVector
         if (_bell != null) {
             return _bell!!
         }
-        _bell = Builder(name = "Bell", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF41416e)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _bell = Builder(
+            name = "Bell",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF41416e)),
+                stroke = null,
+                strokeLineWidth = 0.0f,
+                strokeLineCap = Butt,
+                strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(20.242f, 15.775f)
                 lineToRelative(-1.107f, -1.846f)
                 arcToRelative(4.5f, 4.5f, 0.0f, false, true, -0.64f, -2.312f)
@@ -57,7 +68,7 @@ public val UnselectedIcons.Bell: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _bell!!
     }
 

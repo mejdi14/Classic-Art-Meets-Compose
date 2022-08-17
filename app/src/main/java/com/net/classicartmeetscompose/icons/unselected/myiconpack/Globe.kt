@@ -16,11 +16,22 @@ public val UnselectedIcons.Globe: ImageVector
         if (_globe != null) {
             return _globe!!
         }
-        _globe = Builder(name = "Globe", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF41416e)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _globe = Builder(
+            name = "Globe",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF41416e)),
+                stroke = null,
+                strokeLineWidth = 0.0f,
+                strokeLineCap = Butt,
+                strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(20.952f, 8.834f)
                 arcToRelative(9.438f, 9.438f, 0.0f, false, false, -7.591f, -6.24f)
                 arcToRelative(9.926f, 9.926f, 0.0f, false, false, -2.722f, 0.0f)
@@ -88,7 +99,7 @@ public val UnselectedIcons.Globe: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _globe!!
     }
 
