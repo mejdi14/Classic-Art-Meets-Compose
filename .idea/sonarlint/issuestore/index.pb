@@ -33,8 +33,6 @@ Y
 ,core-navigation/src/main/AndroidManifest.xml,b\2\b2dd45e7d30a7b8ac748b24c73700333ef3697e3
 Y
 )feature-home/src/main/AndroidManifest.xml,9\6\96926abd0179d8da055eddf738b2c1b4f6536ab1
-x
-Happ/src/main/java/com/net/classicartmeetscompose/ui/screen/MainScreen.kt,9\4\94feab709d9760132f879f270e0f52be3d668798
 @
 app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
 ‡
@@ -45,13 +43,9 @@ I
 Pcore-navigation/src/main/java/com/bk/core/navigation/ClassicArtNavigationHost.kt,6\5\654cfe81d918cbf444cde8b7a62fe76be6ab3be7
 w
 Gcore-navigation/src/main/java/com/bk/core/navigation/HomeDestination.kt,a\2\a22079f9ccaa9d5ea271cf8dffceaed877b9e384
-I
-feature-home/build.gradle,1\c\1c178de57297bec4988db9327d794bd50d90fdc0
 L
 core-navigation/build.gradle,4\5\457f83d1d7e14c95c58a150432c9c8e75414e5ca
 <
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
-L
-feature-gallery/build.gradle,f\d\fd5cccae9fba5be34fdc6c0fd90f34bf347ca43d
 z
 Jcore-navigation/src/main/java/com/bk/core/navigation/GalleryDestination.kt,f\0\f06a78763617442941f8a67118d90aee5fae2243

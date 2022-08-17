@@ -1,7 +1,5 @@
 package com.bk.core.data
 
-import com.net.core.network.model.Place
-
 sealed interface DataUiState {
     /**
      * The feed is still loading.
