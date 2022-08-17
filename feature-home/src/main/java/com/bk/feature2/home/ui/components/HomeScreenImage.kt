@@ -1,6 +1,5 @@
 package com.bk.feature2.home.ui.components
 
-import android.util.Log
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -20,7 +19,7 @@ fun HomeScreenImage(item: Data, config: Config?) {
     Image(
         painter = rememberAsyncImagePainter(
             ImageRequest.Builder(LocalContext.current)
-                .data(data = config?.iiifUrl + item.imageId)
+                .data(data = config?.iiifUrl + "/" + item.imageId + "/full/843,/0/default.jpg")
                 .apply(block = {
                     size(size = Size.ORIGINAL)
                 }).build()

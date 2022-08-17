@@ -32,11 +32,11 @@ fun HomeScreen(viewModel: ArtworkViewModel = hiltViewModel()) {
                 (artworkUiState as DataUiState.Success<Artwork>).feed.data
             } else arrayListOf(),
             itemContent = { item ->
-                Text(text = item.imageId.toString())
-               /* HomeScreenImage(
+               // Text(text = item.imageId.toString())
+                HomeScreenImage(
                     item,
                     (artworkUiState as DataUiState.Success<Artwork>).feed.config
-                )*/
+                )
             }
         )
     }
