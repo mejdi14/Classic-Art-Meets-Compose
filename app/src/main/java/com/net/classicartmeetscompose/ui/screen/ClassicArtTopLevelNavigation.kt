@@ -36,7 +36,6 @@ data class TopLevelDestination(
     val route: String,
     val selectedIcon: ImageVector,
     val unselectedIcon: ImageVector,
-    val iconTextId: Int
 )
 
 val TOP_LEVEL_DESTINATIONS = listOf(
@@ -44,12 +43,10 @@ val TOP_LEVEL_DESTINATIONS = listOf(
         route = HomeDestination.route,
         selectedIcon = HomeIcon ,
         unselectedIcon = Icons.Outlined.Home,
-        iconTextId = R.string.home_label
     ),
     TopLevelDestination(
         route = GalleryDestination.route,
         selectedIcon =  HomeIcon ,
         unselectedIcon = Icons.Outlined.Menu,
-        iconTextId = R.string.gallery
     )
 )

@@ -35,7 +35,6 @@ fun ClassicArtBottomBar(
                             contentDescription = null
                         )
                     },
-                    label = { Text(stringResource(destination.iconTextId)) }
                 )
             }
         }
