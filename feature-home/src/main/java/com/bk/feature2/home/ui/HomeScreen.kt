@@ -10,7 +10,7 @@ import androidx.compose.ui.Modifier
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.bk.core.data.DataUiState
 import com.bk.core.data.viewmodel.ArtworkViewModel
-import com.bk.feature2.home.ui.components.SimpleCoilImage
+import com.bk.feature2.home.ui.components.HomeScreenImage
 import com.net.core.network.model.Artwork
 
 @Composable
@@ -28,7 +28,7 @@ fun HomeScreen(viewModel: ArtworkViewModel = hiltViewModel()) {
                 (artworkUiState as DataUiState.Success<Artwork>).feed.data
             } else arrayListOf(),
             itemContent = { item ->
-                SimpleCoilImage(item)
+                HomeScreenImage(item)
             }
         )
     }
